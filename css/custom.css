@@ -1,0 +1,126 @@
+/* Room 77 - Custom CSS */
+
+.slider-hotel {
+	background: no-repeat url("../images/w-hotel-pool.png");
+}
+.header.navbar .logo {
+    padding: 16px 0;
+}
+.text-warning {
+	display: none;
+}
+.js-phone-number {
+	color: #69C0D5;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+.header.navbar .navbar-brand {
+    padding: 0;
+    margin: 0;
+    /* text-indent: -9999px;
+    background-image: url(../images/room77-logo.png);
+    height: 80px;
+    width: 144px; */
+}
+.navbar-brand h1 {
+    font-size: 3.8em;
+    display: inline;
+}
+.navbar-brand {
+    padding: 16px 0;
+}
+.hotels-images-wrap .preload-carousel {
+	padding: 0 0 36px 0;
+}
+.menu {
+	padding: 24px 0;
+}
+.menu a {
+	color: #69C0D5;
+	font-size: 16px;
+}
+.reserve-now {
+	color: #69C0D5;
+	font-size: 16px;
+	font-weight: regular;
+	margin: 16px 0 0 0;
+}
+.reserve-now-btn {
+	color: #69C0D5;
+}
+.reserve-now a {
+	color: #69C0D5;
+}
+.header.navbar a {
+	border-radius: 4px;
+}
+.block-search-form {
+	display: none;
+}
+.about-gr {
+	background: #1f101b;
+}
+.hotel-info-block .container {
+
+}
+
+/* Buttons */
+.button {
+	background:#69C0D5;
+	font-size: 16px;
+	color: #fff;
+	padding: 8px 24px;
+	line-height: 16px;
+	border-radius: 4px;
+	font-weight: bold;
+	margin: 16px 0 0 0;
+}
+.hotel-rooms.group-items .body .btn {
+	border-radius: 4px;
+}
+.check-in-form {
+	margin-top: 30px;
+	box-shadow: 0px 16px 24px rgb(83 91 100 / 24%);
+    border: 1px solid #eee;
+    padding: 0;
+}
+.hotel-rooms-types .hotel-rooms {
+	box-shadow: 0px 16px 24px rgb(83 91 100 / 24%);
+    border: 1px solid #eee;	
+}
+.hotels-nearby {
+	min-height: 427px;
+	background: no-repeat url("../images/hotels-nearby.png") center;
+	margin: 30px 0 0 0;
+}
+.amenities ul li {
+	background: no-repeat url("../images/icons/check-circle.png") left 17px;
+}
+.wrap-slick-slider {
+	display: none;
+}
+.map-placeholder {
+	background: no-repeat url("../images/austin-map-wide.png");
+	width: 100%;
+	min-height: 420px;
+}
+.hotel-logo {
+	background: no-repeat url("../images/w-hotels.gif");
+	width: 109px;
+	height: 116px;
+}
+
+.container .menu {
+	/* background: #fff;
+	box-shadow: 0px 16px 24px rgb(83 91 100 / 24%);
+    border: 1px solid #eee;	*/	
+}
+.about-gr .about-gr-text img {
+	width: 120px;
+	height: 100px;
+	border: 1px solid #4e4e4e;
+}
+.additional-footer a {
+	text-decoration: none;
+}
