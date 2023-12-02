@@ -1,13 +1,4 @@
 /* Room 77 - Custom CSS */
-:root {
-  --border-radius: 8px;
-  --button-radius: 5px;
-  --white: #fff;
-  --black: #000;
-  --primary-color: #2a809a;
-  --primary-color-light: #69c0d5;
-  --primary-color-hover: color-mix(in srgb, var(--primary-color) 80%, #000);
-}
 
 .hidden {
   display: none !important;
@@ -220,9 +211,7 @@ a.button:focus {
 .amenities ul li {
   background: no-repeat url('../images/icons/check-circle.png') left 17px;
 }
-.wrap-slick-slider {
-  display: none;
-}
+
 .map-placeholder {
   background: no-repeat url('../images/austin-map-wide.png');
   width: 100%;
@@ -235,4 +224,10 @@ a.button:focus {
 }
 .additional-footer a {
   text-decoration: none;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
 }

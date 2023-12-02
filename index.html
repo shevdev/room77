@@ -9134,12 +9134,12 @@
           </div>
         </form>
 
-        <div class="about-hotel js-details">
+        <section class="hotel-about section">
           <div class="container">
-            <h2>About W Hotel Austin</h2>
+            <h2 class="section-heading">About W Hotel Austin</h2>
             <div class="readmore-text-wrap">
               <div class="readmore-text-content">
-                <section class="text readmore-text-inner">
+                <div class="text readmore-text-inner">
                   <p>
                     Located in the Athletic Club Plaza and overlooking a golf
                     course, this hotel features a relaxing, tropical atmosphere,
@@ -9155,85 +9155,69 @@
                     Guests can also discover museums, art galleries and
                     beautiful parks nearby.
                   </p>
-                </section>
+                </div>
               </div>
               <span class="mt-2 readmore-button-wrap">
                 <a href="#"></a>
               </span>
             </div>
-            <h2 class="mt-6">Amenities</h2>
-            <section class="amenities mt-4">
-              <ul class="d-flex flex-wrap">
-                <li>Room Service</li>
-                <li>24 hour front desk</li>
-                <li>Fitness Center</li>
-                <li>Coffee Maker</li>
-                <li>Refrigerator</li>
-                <li>Gift Shop</li>
-                <li>Hot Tub or Spa</li>
-                <li>Hair Dryer</li>
-                <li>Wheelchair Access</li>
-                <li>Swimming Pool - Indoor</li>
-                <li>Masks are available to guests</li>
-                <li>Swimming Pool - Outdoor</li>
-                <li>Contactless check-in and check-out are available</li>
-                <li>Free Continental Breakfast</li>
-                <li>Guests are provided with free hand sanitizer</li>
-                <li>Individually-wrapped food options are available</li>
-                <li>Microwave</li>
-                <li>Social distancing measures are in place</li>
-                <li>Tennis Court</li>
-                <li>Game Room</li>
-                <li>Full Kitchen</li>
-                <li>Non-Smoking Facility</li>
-              </ul>
-            </section>
           </div>
-        </div>
+        </section>
 
-        <div class="map-hotel lazyload js-map-block">
+        <section class="hotel-amenities section">
           <div class="container">
-            <div class="d-flex title">
-              <div class="bd-highlight">
-                <h2 id="js-map-header">Location</h2>
-              </div>
-              <div class="ml-auto location-address">
-                <p>
-                  W Hotel <br />
-                  200 Lavaca Street<br />
-                  Austin, TX <br />
-                </p>
-              </div>
-            </div>
-            <div class="map-placeholder"></div>
+            <h2 class="section-heading">Amenities</h2>
+            <ul class="hotel-amenities__list">
+              <li>Room Service</li>
+              <li>24 hour front desk</li>
+              <li>Fitness Center</li>
+              <li>Coffee Maker</li>
+              <li>Refrigerator</li>
+              <li>Gift Shop</li>
+              <li>Hot Tub or Spa</li>
+              <li>Hair Dryer</li>
+              <li>Wheelchair Access</li>
+              <li>Swimming Pool - Indoor</li>
+              <li>Masks are available to guests</li>
+              <li>Swimming Pool - Outdoor</li>
+              <li>Contactless check-in and check-out are available</li>
+              <li>Free Continental Breakfast</li>
+              <li>Guests are provided with free hand sanitizer</li>
+              <li>Individually-wrapped food options are available</li>
+              <li>Microwave</li>
+              <li>Social distancing measures are in place</li>
+              <li>Tennis Court</li>
+              <li>Game Room</li>
+              <li>Full Kitchen</li>
+              <li>Non-Smoking Facility</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="hotel-location section">
+          <div class="container">
+            <h2 class="section-heading">Location</h2>
+            <address class="hotel-location__address">
+              W Hotel <br />
+              200 Lavaca Street Austin, TX 78701
+            </address>
+
             <!-- map box -->
-            <section class="map mt-3">
-              <div class="hotel-map-position js-bottom-map">
-                <div class="hotel-map position-relative js-map-wrap">
-                  <div class="hotel-map-img">
-                    <div class="js-hotel-map">
-                      <div
-                        class="js-wrap-map wrap-map"
-                        data-map-width="960"
-                        data-map-height="360"
-                        data-map-zoom="14"
-                      ></div>
-                    </div>
-                  </div>
-                  <div
-                    class="hotel-map-button js-map-button position-absolute d-none"
-                  >
-                    <a href="#"
-                      ><img src="/images/parts/map/location.svg" />
-                      <span>View Map</span></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </section>
+            <div class="hotel-map">
+              <div class="map-placeholder"></div>
+              <button class="hotel-map__button">
+                <img
+                  src="/images/icons/location.svg"
+                  height="20"
+                  width="20"
+                  loading="lazy"
+                />
+                <span>View Map</span>
+              </button>
+            </div>
             <!-- -->
           </div>
-        </div>
+        </section>
 
         <div class="slider-block lazyload js-nearby-block">
           <div class="container">
@@ -9491,10 +9475,10 @@
           </div>
         </div>
 
-        <div class="about-room77 lazyload">
+        <section class="about-room77 lazyload">
           <div class="d-flex align-items-center position-absolute">
             <div class="about-room77-text">
-              <section class="container">
+              <div class="container">
                 <p>
                   <img
                     alt="Logo"
@@ -9512,11 +9496,11 @@
                     >Learn more</a
                   >
                 </p>
-              </section>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="container additional-footer">
+        </section>
+        <section class="container additional-footer">
           <p>
             Room77 is not owned or sponsored by any particular hotel or chain.
             The use of any hotel trademarks or information is solely for
@@ -9532,7 +9516,7 @@
             >
             for more information.
           </p>
-        </div>
+        </section>
         <!-- Hidden field for ClickTripz -->
         <input
           type="hidden"
@@ -9676,186 +9660,180 @@
       </main>
     </div>
 
-    <div class="footer mt-auto">
-      <footer>
-        <div class="w-100 footer-padding bg-light">
-          <div class="container container-1280">
-            <div class="footer-nav w-100">
-              <div class="row">
-                <div class="col logo-social d-flex flex-column">
-                  <div class="d-flex flex-column mb-auto">
-                    <h3>W Hotel Austin</h3>
-                    <!-- <img title="Guestreservations - Logo" alt="Guestreservations - Logo" src="/assets/237ed65f/images/logo-dark-tm.svg"> 
+    <footer class="footer mt-auto">
+      <div class="w-100 footer-padding bg-light">
+        <div class="container container-1280">
+          <div class="footer-nav w-100">
+            <div class="row">
+              <div class="col logo-social d-flex flex-column">
+                <div class="d-flex flex-column mb-auto">
+                  <h3>W Hotel Austin</h3>
+                  <!-- <img title="Guestreservations - Logo" alt="Guestreservations - Logo" src="/assets/237ed65f/images/logo-dark-tm.svg"> 
                         <small> An independent travel network</small> -->
-                  </div>
-                  <div class="social-networks">
-                    <a title="Facebook" href="#" target="_blank">
-                      <img
-                        title="Facebook"
-                        alt="Facebook"
-                        src="images/icons/facebook.png"
-                      />
-                    </a>
-                    <a title="Twitter" href="#" target="_blank">
-                      <img
-                        title="witter"
-                        alt="Twitter"
-                        src="images/icons/twitter.png"
-                      />
-                    </a>
-                    <a title="Instagram" href="#" target="_blank">
-                      <img
-                        title="Instagram"
-                        alt="Instagram"
-                        src="images/icons/instagram.png"
-                      />
-                    </a>
-                    <a title="YouTube" href="#" target="_blank">
-                      <img
-                        title="YouTube"
-                        alt="YouTube"
-                        src="images/icons/youtube.png"
-                      />
-                    </a>
-                  </div>
                 </div>
-                <div class="col nav-footer d-flex">
-                  <div class="styles">
-                    <h5>Learn More</h5>
-                    <ul class="list-unstyled">
-                      <li><a href="#" title="About Us">About Us</a></li>
-                      <li><a href="#" title="FAQs">FAQs</a></li>
-                      <li><a href="#" title="News">News</a></li>
-                      <li>
-                        <a href="#" title="Customer Reviews"
-                          >Customer Reviews</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" title="Terms of Service"
-                          >Terms of Service</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" title="Privacy Policy">Privacy Policy</a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          title="Hotel Non-Affiliation"
-                          class="no-affiliation-popup-link"
-                          >Hotel Non-Affiliation</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="styles">
-                    <h5>Get in Touch</h5>
-                    <ul class="list-unstyled">
-                      <li><a href="#" title="Contact Us">Contact Us</a></li>
-                      <li><a href="#" title="My Booking">My Booking</a></li>
-                      <li><a href="#" title="Group Rates">Group Rates</a></li>
-                      <li><a href="#" title="Weddings">Weddings</a></li>
-                      <li>
-                        <a href="#" title="Extended Stay">Extended Stay</a>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="social-networks">
+                  <a title="Facebook" href="#" target="_blank">
+                    <img
+                      title="Facebook"
+                      alt="Facebook"
+                      src="images/icons/facebook.png"
+                    />
+                  </a>
+                  <a title="Twitter" href="#" target="_blank">
+                    <img
+                      title="witter"
+                      alt="Twitter"
+                      src="images/icons/twitter.png"
+                    />
+                  </a>
+                  <a title="Instagram" href="#" target="_blank">
+                    <img
+                      title="Instagram"
+                      alt="Instagram"
+                      src="images/icons/instagram.png"
+                    />
+                  </a>
+                  <a title="YouTube" href="#" target="_blank">
+                    <img
+                      title="YouTube"
+                      alt="YouTube"
+                      src="images/icons/youtube.png"
+                    />
+                  </a>
                 </div>
               </div>
-            </div>
-
-            <div
-              class="modal fade modal-admin"
-              id="show-no-affiliation"
-              tabindex="-1"
-              aria-labelledby="myModalLabel"
-            >
-              <div class="modal-dialog modal-log" role="document">
-                <div class="modal-content">
-                  <div class="modal-header text-center">
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title trademark-name" id="myModalLabel">
-                      Room77<sup>TM</sup><br />
-                      Hotel Non-Affiliation – Proudly Independent Network
-                    </h4>
-                  </div>
-                  <div class="modal-body" id="modal-body">
-                    <div class="panel panel-default">
-                      We are an independent travel network for over 100,000
-                      hotels worldwide. We are not owned or sponsored by any
-                      particular hotel, and the trademarks of all hotels in our
-                      network are owned by the respective hotels or licensors.
-                      We only use hotel trademarks or information to the extent
-                      necessary to assist our customers to book rooms in the
-                      travel destination of their choice.
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <b class="trademark-name">Room77<sup>TM</sup></b>
-                        Connects Travelers to Relevant Deals:
-                      </div>
-                      <div class="panel-body no-padding">
-                        <span class="row">
-                          <p class="icons icon-case">
-                            We are focused on connecting travelers to the most
-                            relevant deals.
-                          </p>
-                        </span>
-                        <span class="row">
-                          <p class="icons icon-bed">
-                            As an independent travel network and online travel
-                            agent (OTA), we can offer rooms through hotel room
-                            suppliers and through global distribution systems
-                            where hotels place their inventory for sale.
-                          </p>
-                        </span>
-                        <span class="row">
-                          <p class="icons icon-sale">
-                            This allows us, as an independent travel network, to
-                            get you the same deals you expect with larger travel
-                            agencies.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+              <div class="col nav-footer d-flex">
+                <div class="styles">
+                  <h5>Learn More</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" title="About Us">About Us</a></li>
+                    <li><a href="#" title="FAQs">FAQs</a></li>
+                    <li><a href="#" title="News">News</a></li>
+                    <li>
+                      <a href="#" title="Customer Reviews">Customer Reviews</a>
+                    </li>
+                    <li>
+                      <a href="#" title="Terms of Service">Terms of Service</a>
+                    </li>
+                    <li>
+                      <a href="#" title="Privacy Policy">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        title="Hotel Non-Affiliation"
+                        class="no-affiliation-popup-link"
+                        >Hotel Non-Affiliation</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </div>
-            <div class="copyrighted-slogan w-100">
-              <div class="row">
-                <div class="col-md-auto copyrighted">
-                  <p>
-                    Copyright 2023
-                    <b class="trademark-name">Room77<sup>TM</sup></b
-                    >.
-                  </p>
-                </div>
-                <div class="col slogan">
-                  <p>
-                    <span class="trademark-name">
-                      <b class="trademark-name">Room77<sup>TM</sup></b>
-                    </span>
-                    an independent travel network
-                    <br class="for-mobile for-tablet" />
-                    offering over 100,000 hotels worldwide.
-                  </p>
+                <div class="styles">
+                  <h5>Get in Touch</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" title="Contact Us">Contact Us</a></li>
+                    <li><a href="#" title="My Booking">My Booking</a></li>
+                    <li><a href="#" title="Group Rates">Group Rates</a></li>
+                    <li><a href="#" title="Weddings">Weddings</a></li>
+                    <li>
+                      <a href="#" title="Extended Stay">Extended Stay</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+
+          <div
+            class="modal fade modal-admin"
+            id="show-no-affiliation"
+            tabindex="-1"
+            aria-labelledby="myModalLabel"
+          >
+            <div class="modal-dialog modal-log" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title trademark-name" id="myModalLabel">
+                    Room77<sup>TM</sup><br />
+                    Hotel Non-Affiliation – Proudly Independent Network
+                  </h4>
+                </div>
+                <div class="modal-body" id="modal-body">
+                  <div class="panel panel-default">
+                    We are an independent travel network for over 100,000 hotels
+                    worldwide. We are not owned or sponsored by any particular
+                    hotel, and the trademarks of all hotels in our network are
+                    owned by the respective hotels or licensors. We only use
+                    hotel trademarks or information to the extent necessary to
+                    assist our customers to book rooms in the travel destination
+                    of their choice.
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <b class="trademark-name">Room77<sup>TM</sup></b>
+                      Connects Travelers to Relevant Deals:
+                    </div>
+                    <div class="panel-body no-padding">
+                      <span class="row">
+                        <p class="icons icon-case">
+                          We are focused on connecting travelers to the most
+                          relevant deals.
+                        </p>
+                      </span>
+                      <span class="row">
+                        <p class="icons icon-bed">
+                          As an independent travel network and online travel
+                          agent (OTA), we can offer rooms through hotel room
+                          suppliers and through global distribution systems
+                          where hotels place their inventory for sale.
+                        </p>
+                      </span>
+                      <span class="row">
+                        <p class="icons icon-sale">
+                          This allows us, as an independent travel network, to
+                          get you the same deals you expect with larger travel
+                          agencies.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyrighted-slogan w-100">
+            <div class="row">
+              <div class="col-md-auto copyrighted">
+                <p>
+                  Copyright 2023
+                  <b class="trademark-name">Room77<sup>TM</sup></b
+                  >.
+                </p>
+              </div>
+              <div class="col slogan">
+                <p>
+                  <span class="trademark-name">
+                    <b class="trademark-name">Room77<sup>TM</sup></b>
+                  </span>
+                  an independent travel network
+                  <br class="for-mobile for-tablet" />
+                  offering over 100,000 hotels worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
 
     <div id="mobile-indicator"></div>
   </body>

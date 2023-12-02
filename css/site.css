@@ -17,9 +17,9 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
+  --black: #000;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -37,6 +37,11 @@
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
+  --border-radius: 8px;
+  --button-radius: 5px;
+  --primary-color: #2a809a;
+  --primary-color-light: #69c0d5;
+  --primary-color-hover: color-mix(in srgb, var(--primary-color) 80%, #000);
 }
 *,
 *::before,
@@ -10400,27 +10405,6 @@ body h4.trademark-name.transform sup {
 .hotel-info-block .map-nav .map-block img {
   width: 100%;
 }
-.hotel-map-button {
-  top: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.3) !important;
-  padding: 0.4rem 0.7rem;
-}
-.hotel-map-button img {
-  width: 20px !important;
-  height: 20px !important;
-  position: relative;
-  top: -3px;
-}
-.hotel-map-button span {
-  color: #fff;
-  font-size: 1.4em;
-  font-weight: 600;
-}
-.hotel-map-button a {
-  color: #fff;
-  text-decoration: none;
-}
 .hotel-info-block .map-nav .pr-book-block {
   margin-top: 1.7rem;
 }
@@ -11207,52 +11191,81 @@ body h4.trademark-name.transform sup {
 .text h5 {
   font-size: 18px;
 }
-.amenities {
-  width: 100%;
+
+.hotel-amenities {
+  margin-bottom: 4.5rem;
 }
-.amenities.mt-4 {
-  margin-top: 1em !important;
-}
-.amenities ul {
+
+.hotel-amenities__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
-.amenities ul li {
-  background: url('../images/parts/amenities/check.svg') no-repeat scroll top
-    22px left/18px 18px;
+
+.hotel-amenities__list li {
+  background: no-repeat url('/images/icons/check-circle.png') left 17px;
   list-style-type: none;
   padding: 20px 40px 0 35px;
   font-size: 16px;
   line-height: 1.3em;
-  -ms-flex: 0 0 33%;
   flex: 0 0 33%;
   max-width: 33%;
 }
-.map-hotel {
-  margin-top: 4.5rem;
+.hotel-location {
+  margin-bottom: 4.5rem;
 }
-.map-hotel p {
-  text-align: right;
+.hotel-location .container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.hotel-location .section-heading {
+	margin-bottom: 0;
+}
+.hotel-location__address {
+  color: var(--gray);
   font-size: 1.5em;
-  line-height: 1.2;
   font-weight: 300;
+  line-height: 1.2;
   margin: 0;
+  text-align: right;
 }
-.map-hotel p a {
-  color: inherit;
-  text-decoration: underline;
+
+.hotel-map {
+  grid-column: 1 / 3;
+  position: relative;
 }
-.map-hotel .map.mt-3 {
-  margin-top: 1.7rem !important;
+
+.hotel-map__button {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+  padding: 0.4rem 0.7rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-.map-hotel .map img {
-  width: 100%;
+.hotel-map__button img {
+  width: 20px !important;
+  height: 20px !important;
+  position: relative;
+  top: -3px;
 }
+.hotel-map__button span {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.hotel-map__button a {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media (max-width: 992px) {
   .about-hotel {
     margin-top: 2rem;
   }
-  .amenities ul li {
+  .hotel-amenities__list li {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
@@ -11265,26 +11278,22 @@ body h4.trademark-name.transform sup {
   .about-hotel .mt-6 {
     margin-top: 3rem !important;
   }
-  .map-hotel .title {
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
+  .hotel-location .container {
+    grid-template-columns: 1fr;
   }
-  .map-hotel .title .location-address {
-    margin-left: 0 !important;
-  }
-  .map-hotel {
-    margin-top: 4rem;
-  }
-  .map-hotel p {
+  .hotel-location__address {
     text-align: left;
     font-size: 1.4em;
   }
+  .hotel-map {
+    grid-column: 1;
+  }
 }
 @media (max-width: 576px) {
-  .amenities ul li {
+  .hotel-amenities__list li {
     padding: 20px 30px 0 35px;
   }
-  .amenities ul li:nth-child(2n) {
+  .hotel-amenities__list li:nth-child(2n) {
     padding-right: 10px;
   }
 }
