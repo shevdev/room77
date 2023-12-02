@@ -203,11 +203,6 @@ a.button:focus {
   box-shadow: 0px 16px 24px rgb(83 91 100 / 24%);
   border: 1px solid #eee;
 }
-.hotels-nearby {
-  min-height: 427px;
-  background: no-repeat url('../images/hotels-nearby.png') center;
-  margin: 30px 0 0 0;
-}
 .amenities ul li {
   background: no-repeat url('../images/icons/check-circle.png') left 17px;
 }
@@ -217,6 +212,7 @@ a.button:focus {
   width: 100%;
   min-height: 420px;
 }
+
 .hotel-logo {
   background: no-repeat url('../images/w-hotels.gif');
   width: 109px;
@@ -226,8 +222,81 @@ a.button:focus {
   text-decoration: none;
 }
 
+.nearby-hotels {
+  max-width: 100vw;
+}
+
+.nearby-hotels .section-heading {
+  margin-bottom: 1.25rem;
+}
+
+.nearby-hotels__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(60vw, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nearby-hotel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.nearby-hotel__photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.nearby-hotel__name {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nearby-hotel__visual-rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.nearby-hotel__rating-star {
+  display: block;
+}
+
 .section-heading {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .nearby-hotels__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: initial;
+    grid-auto-columns: initial;
+  }
+}
+
+@media (max-width: 767px) {
+  .nearby-hotels__list-wrapper {
+    overflow-x: auto;
+    position: relative; /* fix's overflow-x for mobile */
+  }
+  .nearby-hotels__list-wrapper {
+    scroll-snap-type: x mandatory;
+  }
+  .nearby-hotel {
+    scroll-snap-align: start;
+  }
 }

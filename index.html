@@ -2,7 +2,10 @@
 <html class="h-100">
   <head>
     <title>W Hotel - Austin, Texas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <meta name="description" content="Room 77 content needed here" />
     <link
       rel="shortcut icon"
@@ -2262,6 +2265,7 @@
           </div>
         </div>
 
+        <!-- REMOVE ME if unused -->
         <div class="hotel hidden">
           <div class="hotel__header">
             <div class="container">
@@ -9219,261 +9223,289 @@
           </div>
         </section>
 
-        <div class="slider-block lazyload js-nearby-block">
+        <aside class="nearby-hotels section">
           <div class="container">
-            <h2>Popular Hotels Nearby</h2>
-
-            <!-- hotels nearby -->
-            <div class="hotels-nearby">&nbsp;</div>
-
-            <div class="wrap-slick-slider">
-              <div
-                class="justify-content-center nearby-hotels-slider slick-slider"
-                data-slades-count="6"
-              >
-                <div class="card position-relative text-white">
-                  <a
-                    href="https://www.guestreservations.com/boca-raton-plaza-hotel/booking"
-                    style="display: block"
-                    title="Boca Plaza"
-                  >
-                    <figure class="figure">
-                      <img
-                        data-lazy="//images.getaroom-cdn.com/image/upload/s--mw0o1J38--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1693954907/7f6d4fae1d318aacc2fbd9b4c7f5b096396b3f11?atc=e7cd1cfa"
-                        data-lazyerror="/assets/624a63c0/images/hotelcloseup.png"
-                        class="card-img"
-                        title="Boca Plaza"
-                        alt="Boca Plaza"
-                      />
-                      <figcaption
-                        class="figure-caption d-flex align-items-end card-figure-bg position-absolute"
-                      >
-                        <section class="mt-auto card-text">
-                          <p class="card-name">Boca Plaza</p>
-                          <p class="card-stars">
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                          </p>
-                        </section>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </div>
-
-                <div class="card position-relative text-white">
-                  <a
-                    href="https://www.guestreservations.com/hilton-garden-inn-boca-raton/booking"
-                    style="display: block"
-                    title="Hilton Garden Inn Boca Raton"
-                  >
-                    <figure class="figure">
-                      <img
-                        data-lazy="//images.getaroom-cdn.com/image/upload/s--fHQwZylr--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1691779126/6a64f1b356c339f792a12c9be26309c38876ca1c?atc=e7cd1cfa"
-                        data-lazyerror="/assets/624a63c0/images/hotelcloseup.png"
-                        class="card-img"
-                        title="Hilton Garden Inn Boca Raton"
-                        alt="Hilton Garden Inn Boca Raton"
-                      />
-                      <figcaption
-                        class="figure-caption d-flex align-items-end card-figure-bg position-absolute"
-                      >
-                        <section class="mt-auto card-text">
-                          <p class="card-name">Hilton Garden Inn Boca Raton</p>
-                          <p class="card-stars">
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                          </p>
-                        </section>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </div>
-
-                <div class="card position-relative text-white">
-                  <a
-                    href="https://www.guestreservations.com/residence-inn-by-marriott-boca-raton/booking"
-                    style="display: block"
-                    title="Residence Inn Boca Raton"
-                  >
-                    <figure class="figure">
-                      <img
-                        data-lazy="//images.getaroom-cdn.com/image/upload/s--K-RBZE1F--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1681507494/a8b9023a7aa7980f0dd2288c955ec8a1ac199774?atc=e7cd1cfa"
-                        data-lazyerror="/assets/624a63c0/images/hotelcloseup.png"
-                        class="card-img"
-                        title="Residence Inn Boca Raton"
-                        alt="Residence Inn Boca Raton"
-                      />
-                      <figcaption
-                        class="figure-caption d-flex align-items-end card-figure-bg position-absolute"
-                      >
-                        <section class="mt-auto card-text">
-                          <p class="card-name">Residence Inn Boca Raton</p>
-                          <p class="card-stars">
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                          </p>
-                        </section>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </div>
-
-                <div class="card position-relative text-white">
-                  <a
-                    href="https://www.guestreservations.com/holiday-inn-express-boca-raton-west/booking"
-                    style="display: block"
-                    title="Holiday Inn Express Boca Raton - West, an IHG Hotel"
-                  >
-                    <figure class="figure">
-                      <img
-                        data-lazy="//images.getaroom-cdn.com/image/upload/s--JiDM-YBw--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1665917729/12ca42da47b9afc5c11b4babbb1f7fcc53979b3a?atc=e7cd1cfa"
-                        data-lazyerror="/assets/624a63c0/images/hotelcloseup.png"
-                        class="card-img"
-                        title="Holiday Inn Express Boca Raton - West, an IHG Hotel"
-                        alt="Holiday Inn Express Boca Raton - West, an IHG Hotel"
-                      />
-                      <figcaption
-                        class="figure-caption d-flex align-items-end card-figure-bg position-absolute"
-                      >
-                        <section class="mt-auto card-text">
-                          <p class="card-name">
-                            Holiday Inn Express Boca Raton - West, an IHG...
-                          </p>
-                          <p class="card-stars">
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                          </p>
-                        </section>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </div>
-
-                <div class="card position-relative text-white">
-                  <a
-                    href="https://www.guestreservations.com/extended-stay-america-boca-raton-commerce/booking"
-                    style="display: block"
-                    title="Extended Stay America Suites - Boca Raton - Commerce"
-                  >
-                    <figure class="figure">
-                      <img
-                        data-lazy="//images.getaroom-cdn.com/image/upload/s--y7mZeRPo--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1665931497/760e7bc68d39224d9400191c5184e4331c8ea1ba?atc=e7cd1cfa"
-                        data-lazyerror="/assets/624a63c0/images/hotelcloseup.png"
-                        class="card-img"
-                        title="Extended Stay America Suites - Boca Raton - Commerce"
-                        alt="Extended Stay America Suites - Boca Raton - Commerce"
-                      />
-                      <figcaption
-                        class="figure-caption d-flex align-items-end card-figure-bg position-absolute"
-                      >
-                        <section class="mt-auto card-text">
-                          <p class="card-name">
-                            Extended Stay America Suites - Boca Raton -...
-                          </p>
-                          <p class="card-stars">
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                          </p>
-                        </section>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </div>
-
-                <div class="card position-relative text-white">
-                  <a
-                    href="https://www.guestreservations.com/quality-inn-boca-raton/booking"
-                    style="display: block"
-                    title="Quality Inn Boca Raton University Area"
-                  >
-                    <figure class="figure">
-                      <img
-                        data-lazy="//images.getaroom-cdn.com/image/upload/s--YEeLzqij--/c_limit,e_improve,fl_lossy.immutable_cache,h_460,q_auto:good,w_460/v1665923975/132d87ec8654dda14532c6f8074b950df5f9b418?atc=e7cd1cfa"
-                        data-lazyerror="/assets/624a63c0/images/hotelcloseup.png"
-                        class="card-img"
-                        title="Quality Inn Boca Raton University Area"
-                        alt="Quality Inn Boca Raton University Area"
-                      />
-                      <figcaption
-                        class="figure-caption d-flex align-items-end card-figure-bg position-absolute"
-                      >
-                        <section class="mt-auto card-text">
-                          <p class="card-name">
-                            Quality Inn Boca Raton University Area
-                          </p>
-                          <p class="card-stars">
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                            <img
-                              src="/assets/624a63c0/images/star.svg"
-                              title="Hotel star"
-                            />
-                          </p>
-                        </section>
-                      </figcaption>
-                    </figure>
-                  </a>
-                </div>
-              </div>
+            <h2 class="section-heading">Popular Hotels Nearby</h2>
+            <div class="nearby-hotels__list-wrapper">
+              <ul class="nearby-hotels__list">
+                <li class="nearby-hotels__list-item">
+                  <figure class="nearby-hotel">
+                    <img
+                      src="/images/ramada.jpg"
+                      alt=""
+                      class="nearby-hotel__photo"
+                      loading="lazy"
+                      height="202"
+                      width="359"
+                    />
+                    <figcaption class="nearby-hotel__details">
+                      <p class="nearby-hotel__name">
+                        Ramada by Wyndham Reno Hotel &amp; Casino
+                      </p>
+                      <div class="nearby-hotel__rating">
+                        <p class="nearby-hotel__rating-text sr-only">3 stars</p>
+                        <div class="nearby-hotel__visual-rating">
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="nearby-hotels__list-item">
+                  <figure class="nearby-hotel">
+                    <img
+                      src="/images/hilton-garden-inn-reno.jpg"
+                      alt=""
+                      class="nearby-hotel__photo"
+                      loading="lazy"
+                      height="202"
+                      width="359"
+                    />
+                    <figcaption class="nearby-hotel__details">
+                      <p class="nearby-hotel__name">Hilton Garden Inn Reno</p>
+                      <div class="nearby-hotel__rating">
+                        <p class="nearby-hotel__rating-text sr-only">3 stars</p>
+                        <div class="nearby-hotel__visual-rating">
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="nearby-hotels__list-item">
+                  <figure class="nearby-hotel">
+                    <img
+                      src="/images/best-western-plus-boomtown-casino.jpg"
+                      alt=""
+                      class="nearby-hotel__photo"
+                      loading="lazy"
+                      height="202"
+                      width="359"
+                    />
+                    <figcaption class="nearby-hotel__details">
+                      <p class="nearby-hotel__name">
+                        Best Western Plus Boomtown Casino Hotel
+                      </p>
+                      <div class="nearby-hotel__rating">
+                        <p class="nearby-hotel__rating-text sr-only">3 stars</p>
+                        <div class="nearby-hotel__visual-rating">
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="nearby-hotels__list-item">
+                  <figure class="nearby-hotel">
+                    <img
+                      src="/images/surestay-plus-hotel.jpg"
+                      alt=""
+                      class="nearby-hotel__photo"
+                      loading="lazy"
+                      height="202"
+                      width="359"
+                    />
+                    <figcaption class="nearby-hotel__details">
+                      <p class="nearby-hotel__name">
+                        SureStay Plus Hotel by Best Western Reno Airport
+                      </p>
+                      <div class="nearby-hotel__rating">
+                        <p class="nearby-hotel__rating-text sr-only">3 stars</p>
+                        <div class="nearby-hotel__visual-rating">
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="nearby-hotels__list-item">
+                  <figure class="nearby-hotel">
+                    <img
+                      src="/images/baymont-inn-and-suites.jpg"
+                      alt=""
+                      class="nearby-hotel__photo"
+                      loading="lazy"
+                      height="202"
+                      width="359"
+                    />
+                    <figcaption class="nearby-hotel__details">
+                      <p class="nearby-hotel__name">
+                        Baymont Inn and Suites Reno
+                      </p>
+                      <div class="nearby-hotel__rating">
+                        <p class="nearby-hotel__rating-text sr-only">3 stars</p>
+                        <div class="nearby-hotel__visual-rating">
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="nearby-hotels__list-item">
+                  <figure class="nearby-hotel">
+                    <img
+                      src="/images/aiden-by-best-western.jpg"
+                      alt=""
+                      class="nearby-hotel__photo"
+                      loading="lazy"
+                      height="202"
+                      width="359"
+                    />
+                    <figcaption class="nearby-hotel__details">
+                      <p class="nearby-hotel__name">
+                        Aiden by Best Western at South Reno
+                      </p>
+                      <div class="nearby-hotel__rating">
+                        <p class="nearby-hotel__rating-text sr-only">3 stars</p>
+                        <div class="nearby-hotel__visual-rating">
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                          <img
+                            src="/images/icons/star.svg"
+                            alt=""
+                            class="nearby-hotel__rating-star"
+                            loading="lazy"
+                            height="16"
+                            width="16"
+                          />
+                        </div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
+        </aside>
 
         <section class="about-room77 lazyload">
           <div class="d-flex align-items-center position-absolute">
