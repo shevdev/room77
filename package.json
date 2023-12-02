@@ -1,0 +1,19 @@
+{
+  "name": "room77",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run flush && npm run css && npm run html && npm run images",
+    "flush": "rm -rf ./build/*; mkdir ./build/css; mkdir ./build/images",
+    "css": "purgecss --css ./css/site.css ./css/custom.css --content ./index.html --output ./build/css",
+    "html": "cp ./index.html ./build/index.html",
+    "images": "cp -r ./images/* ./build/images"
+  },
+  "author": "palcisto",
+  "license": "ISC",
+  "devDependencies": {
+    "purgecss": "^5.0.0"
+  }
+}

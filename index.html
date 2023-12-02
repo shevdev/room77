@@ -43,6 +43,11 @@
     <link href="css/site.css" rel="stylesheet" />
     <!-- new CSS 10/2023 -->
     <link href="css/custom.css" rel="stylesheet" />
+
+    <link rel="preload" as="image" href="images/w-hotels-logo.webp" />
+    <link rel="preload" as="image" href="images/w-hotel-pool.png" />
+    <link rel="preload" as="image" href="images/map-246.png" />
+
     <meta name="csrf-param" content="_csrf" />
     <meta name="csrf-token" content="" />
   </head>
@@ -376,25 +381,46 @@
             </div>
 
             <div class="social-networks for-mobile">
-              <a title="Facebook" href="#" target="_blank">
+              <a
+                class="social-network"
+                title="Facebook"
+                href="#"
+                target="_blank"
+              >
                 <img
                   title="Facebook"
                   alt="Facebook"
                   src="images/icons/facebook.png"
+                  height="20"
+                  width="20"
                 />
               </a>
-              <a title="Twitter" href="#" target="_blank">
+              <a
+                class="social-network"
+                title="Twitter"
+                href="#"
+                target="_blank"
+              >
                 <img
                   title="Twitter"
                   alt="Twitter"
                   src="images/icons/twitter.png"
+                  height="20"
+                  width="20"
                 />
               </a>
-              <a title="Instagram" href="#" target="_blank">
+              <a
+                class="social-network"
+                title="Instagram"
+                href="#"
+                target="_blank"
+              >
                 <img
                   title="Instagram"
                   alt="Instagram"
                   src="images/icons/instagram.png"
+                  height="20"
+                  width="20"
                 />
               </a>
             </div>
@@ -455,8 +481,17 @@
             <div class="container">
               <div class="bg-title-hotel d-flex position-relative">
                 <div class="block-info">
-                  <!-- <div class="hotel-logo">&nbsp;</div> --->
-                  <h1 class="hotel-name">W Hotel Austin</h1>
+                  <div class="hotel-branding">
+                    <img
+                      style="mix-blend-mode: difference"
+                      class="hotel-logo"
+                      alt="Logo"
+                      src="images/w-hotels-logo.webp"
+                      width="52"
+                      height="50"
+                    />
+                    <h1 class="hotel-name">W Hotel Austin</h1>
+                  </div>
 
                   <!-- Class "hotel-adress" required for ClickTripz-->
                   <p class="hotel-adress">200 Lavaca Street, Austin TX</p>
@@ -492,7 +527,7 @@
                 <div class="col">
                   <div class="hotel__photos">
                     <img
-                      src="/images/w-hotel-pool.png"
+                      src="images/w-hotel-pool.png"
                       style="max-width: 100%"
                       width
                       alt=""
@@ -558,7 +593,7 @@
                                 <img
                                   class="js-map-img"
                                   alt="W Hotel Austin"
-                                  src="/images/map-246.png"
+                                  src="images/map-246.png"
                                   height="274"
                                   width="358"
                                 />
@@ -569,7 +604,12 @@
                             class="hotel-map-button js-map-button position-absolute d-none"
                           >
                             <a href="#"
-                              ><img src="/images/parts/map/location.svg" />
+                              ><img
+                                src="images/icons/location.svg"
+                                alt=""
+                                height="20"
+                                width="20"
+                              />
                               <span>View Map</span></a
                             >
                           </div>
@@ -595,1793 +635,6 @@
                       >
                         CHECK RATES
                       </button>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end hero -->
-
-            <!-- start check in form -->
-            <div class="container check-in-form">
-              <form
-                class="js-searching"
-                name="searching"
-                action="https://www.guestreservations.com/reno-suites/booking"
-                method="GET"
-                autocomplete="off"
-                disable-popunder="true"
-              >
-                <div class="form-search-hotels js-booking-form">
-                  <div
-                    class="row no-gutters js-first-room js-room-block"
-                    data-room_block="1"
-                  >
-                    <div class="row line-row no-gutters col">
-                      <div
-                        id="date-info"
-                        class="date-info col row no-gutters"
-                        data-mindate="11/22/2023"
-                        data-maxdate="12/31/2024"
-                        data-lastdayofpenultimatemonth="11/30/2024"
-                      >
-                        <div class="check-in col js-check-date-block">
-                          <div class="form-group">
-                            <label for="check_in_view">Check-in </label>
-                            <div class="js-check_date_wrap check_date_wrap">
-                              <input
-                                readonly="readonly"
-                                value="11/22/2023"
-                                name="checkIn"
-                                autocomplete="off"
-                                id="check_in"
-                                class="form-control js-check_date check_date unvisible"
-                                type="text"
-                                ct-datepicker="true"
-                                placeholder="Check In:"
-                                data-startdate="11/22/2023"
-                              />
-                              <input
-                                readonly="readonly"
-                                value="Wed, Nov 22"
-                                autocomplete="off"
-                                id="check_in_view"
-                                class="form-control js-check_date_view check_date_view"
-                                type="text"
-                                onfocus="if (!window.__cfRLUnblockHandlers) return false; this.blur();"
-                                ct-datepicker="true"
-                                placeholder="Check In:"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="check-out col js-check-date-block">
-                          <div class="form-group">
-                            <label for="check_out_view">Check-out </label>
-                            <div class="js-check_date_wrap check_date_wrap">
-                              <input
-                                readonly="readonly"
-                                value="11/23/2023"
-                                autocomplete="off"
-                                name="checkOut"
-                                id="check_out"
-                                class="form-control js-check_date check_date unvisible"
-                                type="text"
-                                ct-datepicker="true"
-                                placeholder="Check out:"
-                                data-startdate="11/23/2023"
-                              />
-                              <input
-                                readonly="readonly"
-                                value="Thu, Nov 23"
-                                autocomplete="off"
-                                id="check_out_view"
-                                class="form-control js-check_date_view check_date_view"
-                                type="text"
-                                onfocus="if (!window.__cfRLUnblockHandlers) return false; this.blur();"
-                                ct-datepicker="true"
-                                placeholder="Check out:"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="rooms col">
-                      <div class="form-group">
-                        <label for="rooms">Rooms</label>
-
-                        <div class="dropdown js-rooms">
-                          <button
-                            type="button"
-                            class="dropdown-toggle btn"
-                            id="dropdownMenuRooms"
-                            data-toggle="dropdown"
-                            data-display="static"
-                            aria-expanded="false"
-                            aria-haspopup="true"
-                          >
-                            1
-                          </button>
-                          <input
-                            name="rooms"
-                            value="1"
-                            type="hidden"
-                            id="rooms"
-                          />
-                          <div
-                            class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                            aria-labelledby="dropdownMenuRooms"
-                          >
-                            <div class="scroll-inner simple-scrollbar">
-                              <button
-                                type="button"
-                                data-option="1"
-                                class="dropdown-item option-selected"
-                              >
-                                1
-                              </button>
-                              <button
-                                type="button"
-                                data-option="2"
-                                class="dropdown-item"
-                              >
-                                2
-                              </button>
-                              <button
-                                type="button"
-                                data-option="3"
-                                class="dropdown-item"
-                              >
-                                3
-                              </button>
-                              <button
-                                type="button"
-                                data-option="4"
-                                class="dropdown-item"
-                              >
-                                4
-                              </button>
-                              <button
-                                type="button"
-                                data-option="5"
-                                class="dropdown-item"
-                              >
-                                5
-                              </button>
-                              <button
-                                type="button"
-                                data-option="6"
-                                class="dropdown-item"
-                              >
-                                6
-                              </button>
-                              <button
-                                type="button"
-                                data-option="7"
-                                class="dropdown-item"
-                              >
-                                7
-                              </button>
-                              <button
-                                type="button"
-                                data-option="8"
-                                class="dropdown-item"
-                              >
-                                8
-                              </button>
-                              <button
-                                type="button"
-                                data-option="9"
-                                data-process-dropdown="no"
-                                data-callback="goToGroupRates"
-                                class="dropdown-item"
-                              >
-                                9+
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="people col row no-gutters">
-                      <div class="adults col">
-                        <div class="form-group">
-                          <label for="adults[1]">Adults</label>
-
-                          <div class="dropdown js-adults">
-                            <button
-                              type="button"
-                              class="dropdown-toggle btn"
-                              id="dropdownMenuAdults_1"
-                              data-toggle="dropdown"
-                              data-display="static"
-                              aria-expanded="false"
-                              aria-haspopup="true"
-                            >
-                              2
-                            </button>
-                            <input
-                              name="adults[1]"
-                              value="2"
-                              type="hidden"
-                              id="adults[1]"
-                            />
-                            <div
-                              class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                              aria-labelledby="dropdownMenuAdults_1"
-                            >
-                              <div class="scroll-inner simple-scrollbar">
-                                <button
-                                  type="button"
-                                  data-option="1"
-                                  class="dropdown-item"
-                                >
-                                  1
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="2"
-                                  class="dropdown-item option-selected"
-                                >
-                                  2
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="3"
-                                  class="dropdown-item"
-                                >
-                                  3
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="4"
-                                  class="dropdown-item"
-                                >
-                                  4
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="5"
-                                  class="dropdown-item"
-                                >
-                                  5
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="6"
-                                  class="dropdown-item"
-                                >
-                                  6
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="7"
-                                  class="dropdown-item"
-                                >
-                                  7
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="8"
-                                  class="dropdown-item"
-                                >
-                                  8
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="children col">
-                        <div class="form-group">
-                          <label for="children[1]">Children</label>
-
-                          <div class="dropdown js-children">
-                            <button
-                              type="button"
-                              class="dropdown-toggle btn"
-                              id="dropdownMenuChildren_1"
-                              data-toggle="dropdown"
-                              data-display="static"
-                              aria-expanded="false"
-                              aria-haspopup="true"
-                            >
-                              0
-                            </button>
-                            <input
-                              name="children[1]"
-                              value="0"
-                              type="hidden"
-                              id="children[1]"
-                            />
-                            <div
-                              class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                              aria-labelledby="dropdownMenuChildren_1"
-                            >
-                              <div class="scroll-inner simple-scrollbar">
-                                <button
-                                  type="button"
-                                  data-option="0"
-                                  class="dropdown-item option-selected"
-                                >
-                                  0
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="1"
-                                  class="dropdown-item"
-                                >
-                                  1
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="2"
-                                  class="dropdown-item"
-                                >
-                                  2
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="3"
-                                  class="dropdown-item"
-                                >
-                                  3
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="4"
-                                  class="dropdown-item"
-                                >
-                                  4
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="5"
-                                  class="dropdown-item"
-                                >
-                                  5
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="6"
-                                  class="dropdown-item"
-                                >
-                                  6
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="7"
-                                  class="dropdown-item"
-                                >
-                                  7
-                                </button>
-                                <button
-                                  type="button"
-                                  data-option="8"
-                                  class="dropdown-item"
-                                >
-                                  8
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="search-button col d-flex align-content">
-                      <button type="submit" class="btn btn-warning">
-                        Find Rooms
-                      </button>
-                    </div>
-
-                    <div class="bg-white drop-down-list js-more-rooms">
-                      <div
-                        class="row no-gutters children-ages js-children-ages-block hidden"
-                        data-room_block="1"
-                      >
-                        <div class="children-ages-title col">
-                          Children ages <br />
-                          (1-17, enter 0 for infants)
-                        </div>
-                        <div
-                          class="children-ages-body w-100 d-flex justify-content-end"
-                        >
-                          <div class="child col">
-                            <div class="form-group">
-                              <div
-                                class="dropdown scroll-bar js-children-ages no-auto-init"
-                              >
-                                <button
-                                  type="button"
-                                  class="dropdown-toggle btn"
-                                  id="dropdownMenuChildren_11"
-                                  data-toggle="dropdown"
-                                  data-display="static"
-                                  aria-expanded="false"
-                                  aria-haspopup="true"
-                                ></button>
-                                <input
-                                  disabled="disabled"
-                                  name="ages[1][1]"
-                                  value="0"
-                                  data-childrenid="1"
-                                  type="hidden"
-                                  id="ages[1][1]"
-                                />
-                                <div
-                                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                                  aria-labelledby="dropdownMenuChildren_11"
-                                >
-                                  <div class="scroll-inner simple-scrollbar">
-                                    <button
-                                      type="button"
-                                      data-option="0"
-                                      class="dropdown-item"
-                                    >
-                                      0
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="1"
-                                      class="dropdown-item"
-                                    >
-                                      1
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="2"
-                                      class="dropdown-item"
-                                    >
-                                      2
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="3"
-                                      class="dropdown-item"
-                                    >
-                                      3
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="4"
-                                      class="dropdown-item"
-                                    >
-                                      4
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="5"
-                                      class="dropdown-item"
-                                    >
-                                      5
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="6"
-                                      class="dropdown-item"
-                                    >
-                                      6
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="7"
-                                      class="dropdown-item"
-                                    >
-                                      7
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="8"
-                                      class="dropdown-item"
-                                    >
-                                      8
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="9"
-                                      class="dropdown-item"
-                                    >
-                                      9
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="10"
-                                      class="dropdown-item"
-                                    >
-                                      10
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="11"
-                                      class="dropdown-item"
-                                    >
-                                      11
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="12"
-                                      class="dropdown-item"
-                                    >
-                                      12
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="13"
-                                      class="dropdown-item"
-                                    >
-                                      13
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="14"
-                                      class="dropdown-item"
-                                    >
-                                      14
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="15"
-                                      class="dropdown-item"
-                                    >
-                                      15
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="16"
-                                      class="dropdown-item"
-                                    >
-                                      16
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="17"
-                                      class="dropdown-item"
-                                    >
-                                      17
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="child col">
-                            <div class="form-group">
-                              <div
-                                class="dropdown scroll-bar js-children-ages no-auto-init"
-                              >
-                                <button
-                                  type="button"
-                                  class="dropdown-toggle btn"
-                                  id="dropdownMenuChildren_12"
-                                  data-toggle="dropdown"
-                                  data-display="static"
-                                  aria-expanded="false"
-                                  aria-haspopup="true"
-                                ></button>
-                                <input
-                                  disabled="disabled"
-                                  name="ages[1][2]"
-                                  value="0"
-                                  data-childrenid="2"
-                                  type="hidden"
-                                  id="ages[1][2]"
-                                />
-                                <div
-                                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                                  aria-labelledby="dropdownMenuChildren_12"
-                                >
-                                  <div class="scroll-inner simple-scrollbar">
-                                    <button
-                                      type="button"
-                                      data-option="0"
-                                      class="dropdown-item"
-                                    >
-                                      0
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="1"
-                                      class="dropdown-item"
-                                    >
-                                      1
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="2"
-                                      class="dropdown-item"
-                                    >
-                                      2
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="3"
-                                      class="dropdown-item"
-                                    >
-                                      3
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="4"
-                                      class="dropdown-item"
-                                    >
-                                      4
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="5"
-                                      class="dropdown-item"
-                                    >
-                                      5
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="6"
-                                      class="dropdown-item"
-                                    >
-                                      6
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="7"
-                                      class="dropdown-item"
-                                    >
-                                      7
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="8"
-                                      class="dropdown-item"
-                                    >
-                                      8
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="9"
-                                      class="dropdown-item"
-                                    >
-                                      9
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="10"
-                                      class="dropdown-item"
-                                    >
-                                      10
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="11"
-                                      class="dropdown-item"
-                                    >
-                                      11
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="12"
-                                      class="dropdown-item"
-                                    >
-                                      12
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="13"
-                                      class="dropdown-item"
-                                    >
-                                      13
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="14"
-                                      class="dropdown-item"
-                                    >
-                                      14
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="15"
-                                      class="dropdown-item"
-                                    >
-                                      15
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="16"
-                                      class="dropdown-item"
-                                    >
-                                      16
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="17"
-                                      class="dropdown-item"
-                                    >
-                                      17
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="child col">
-                            <div class="form-group">
-                              <div
-                                class="dropdown scroll-bar js-children-ages no-auto-init"
-                              >
-                                <button
-                                  type="button"
-                                  class="dropdown-toggle btn"
-                                  id="dropdownMenuChildren_13"
-                                  data-toggle="dropdown"
-                                  data-display="static"
-                                  aria-expanded="false"
-                                  aria-haspopup="true"
-                                ></button>
-                                <input
-                                  disabled="disabled"
-                                  name="ages[1][3]"
-                                  value="0"
-                                  data-childrenid="3"
-                                  type="hidden"
-                                  id="ages[1][3]"
-                                />
-                                <div
-                                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                                  aria-labelledby="dropdownMenuChildren_13"
-                                >
-                                  <div class="scroll-inner simple-scrollbar">
-                                    <button
-                                      type="button"
-                                      data-option="0"
-                                      class="dropdown-item"
-                                    >
-                                      0
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="1"
-                                      class="dropdown-item"
-                                    >
-                                      1
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="2"
-                                      class="dropdown-item"
-                                    >
-                                      2
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="3"
-                                      class="dropdown-item"
-                                    >
-                                      3
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="4"
-                                      class="dropdown-item"
-                                    >
-                                      4
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="5"
-                                      class="dropdown-item"
-                                    >
-                                      5
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="6"
-                                      class="dropdown-item"
-                                    >
-                                      6
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="7"
-                                      class="dropdown-item"
-                                    >
-                                      7
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="8"
-                                      class="dropdown-item"
-                                    >
-                                      8
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="9"
-                                      class="dropdown-item"
-                                    >
-                                      9
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="10"
-                                      class="dropdown-item"
-                                    >
-                                      10
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="11"
-                                      class="dropdown-item"
-                                    >
-                                      11
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="12"
-                                      class="dropdown-item"
-                                    >
-                                      12
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="13"
-                                      class="dropdown-item"
-                                    >
-                                      13
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="14"
-                                      class="dropdown-item"
-                                    >
-                                      14
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="15"
-                                      class="dropdown-item"
-                                    >
-                                      15
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="16"
-                                      class="dropdown-item"
-                                    >
-                                      16
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="17"
-                                      class="dropdown-item"
-                                    >
-                                      17
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="child col">
-                            <div class="form-group">
-                              <div
-                                class="dropdown scroll-bar js-children-ages no-auto-init"
-                              >
-                                <button
-                                  type="button"
-                                  class="dropdown-toggle btn"
-                                  id="dropdownMenuChildren_14"
-                                  data-toggle="dropdown"
-                                  data-display="static"
-                                  aria-expanded="false"
-                                  aria-haspopup="true"
-                                ></button>
-                                <input
-                                  disabled="disabled"
-                                  name="ages[1][4]"
-                                  value="0"
-                                  data-childrenid="4"
-                                  type="hidden"
-                                  id="ages[1][4]"
-                                />
-                                <div
-                                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                                  aria-labelledby="dropdownMenuChildren_14"
-                                >
-                                  <div class="scroll-inner simple-scrollbar">
-                                    <button
-                                      type="button"
-                                      data-option="0"
-                                      class="dropdown-item"
-                                    >
-                                      0
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="1"
-                                      class="dropdown-item"
-                                    >
-                                      1
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="2"
-                                      class="dropdown-item"
-                                    >
-                                      2
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="3"
-                                      class="dropdown-item"
-                                    >
-                                      3
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="4"
-                                      class="dropdown-item"
-                                    >
-                                      4
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="5"
-                                      class="dropdown-item"
-                                    >
-                                      5
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="6"
-                                      class="dropdown-item"
-                                    >
-                                      6
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="7"
-                                      class="dropdown-item"
-                                    >
-                                      7
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="8"
-                                      class="dropdown-item"
-                                    >
-                                      8
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="9"
-                                      class="dropdown-item"
-                                    >
-                                      9
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="10"
-                                      class="dropdown-item"
-                                    >
-                                      10
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="11"
-                                      class="dropdown-item"
-                                    >
-                                      11
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="12"
-                                      class="dropdown-item"
-                                    >
-                                      12
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="13"
-                                      class="dropdown-item"
-                                    >
-                                      13
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="14"
-                                      class="dropdown-item"
-                                    >
-                                      14
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="15"
-                                      class="dropdown-item"
-                                    >
-                                      15
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="16"
-                                      class="dropdown-item"
-                                    >
-                                      16
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="17"
-                                      class="dropdown-item"
-                                    >
-                                      17
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="child col">
-                            <div class="form-group">
-                              <div
-                                class="dropdown scroll-bar js-children-ages no-auto-init"
-                              >
-                                <button
-                                  type="button"
-                                  class="dropdown-toggle btn"
-                                  id="dropdownMenuChildren_15"
-                                  data-toggle="dropdown"
-                                  data-display="static"
-                                  aria-expanded="false"
-                                  aria-haspopup="true"
-                                ></button>
-                                <input
-                                  disabled="disabled"
-                                  name="ages[1][5]"
-                                  value="0"
-                                  data-childrenid="5"
-                                  type="hidden"
-                                  id="ages[1][5]"
-                                />
-                                <div
-                                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                                  aria-labelledby="dropdownMenuChildren_15"
-                                >
-                                  <div class="scroll-inner simple-scrollbar">
-                                    <button
-                                      type="button"
-                                      data-option="0"
-                                      class="dropdown-item"
-                                    >
-                                      0
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="1"
-                                      class="dropdown-item"
-                                    >
-                                      1
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="2"
-                                      class="dropdown-item"
-                                    >
-                                      2
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="3"
-                                      class="dropdown-item"
-                                    >
-                                      3
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="4"
-                                      class="dropdown-item"
-                                    >
-                                      4
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="5"
-                                      class="dropdown-item"
-                                    >
-                                      5
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="6"
-                                      class="dropdown-item"
-                                    >
-                                      6
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="7"
-                                      class="dropdown-item"
-                                    >
-                                      7
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="8"
-                                      class="dropdown-item"
-                                    >
-                                      8
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="9"
-                                      class="dropdown-item"
-                                    >
-                                      9
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="10"
-                                      class="dropdown-item"
-                                    >
-                                      10
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="11"
-                                      class="dropdown-item"
-                                    >
-                                      11
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="12"
-                                      class="dropdown-item"
-                                    >
-                                      12
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="13"
-                                      class="dropdown-item"
-                                    >
-                                      13
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="14"
-                                      class="dropdown-item"
-                                    >
-                                      14
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="15"
-                                      class="dropdown-item"
-                                    >
-                                      15
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="16"
-                                      class="dropdown-item"
-                                    >
-                                      16
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="17"
-                                      class="dropdown-item"
-                                    >
-                                      17
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="child col">
-                            <div class="form-group">
-                              <div
-                                class="dropdown scroll-bar js-children-ages no-auto-init"
-                              >
-                                <button
-                                  type="button"
-                                  class="dropdown-toggle btn"
-                                  id="dropdownMenuChildren_16"
-                                  data-toggle="dropdown"
-                                  data-display="static"
-                                  aria-expanded="false"
-                                  aria-haspopup="true"
-                                ></button>
-                                <input
-                                  disabled="disabled"
-                                  name="ages[1][6]"
-                                  value="0"
-                                  data-childrenid="6"
-                                  type="hidden"
-                                  id="ages[1][6]"
-                                />
-                                <div
-                                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                                  aria-labelledby="dropdownMenuChildren_16"
-                                >
-                                  <div class="scroll-inner simple-scrollbar">
-                                    <button
-                                      type="button"
-                                      data-option="0"
-                                      class="dropdown-item"
-                                    >
-                                      0
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="1"
-                                      class="dropdown-item"
-                                    >
-                                      1
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="2"
-                                      class="dropdown-item"
-                                    >
-                                      2
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="3"
-                                      class="dropdown-item"
-                                    >
-                                      3
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="4"
-                                      class="dropdown-item"
-                                    >
-                                      4
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="5"
-                                      class="dropdown-item"
-                                    >
-                                      5
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="6"
-                                      class="dropdown-item"
-                                    >
-                                      6
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="7"
-                                      class="dropdown-item"
-                                    >
-                                      7
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="8"
-                                      class="dropdown-item"
-                                    >
-                                      8
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="9"
-                                      class="dropdown-item"
-                                    >
-                                      9
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="10"
-                                      class="dropdown-item"
-                                    >
-                                      10
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="11"
-                                      class="dropdown-item"
-                                    >
-                                      11
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="12"
-                                      class="dropdown-item"
-                                    >
-                                      12
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="13"
-                                      class="dropdown-item"
-                                    >
-                                      13
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="14"
-                                      class="dropdown-item"
-                                    >
-                                      14
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="15"
-                                      class="dropdown-item"
-                                    >
-                                      15
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="16"
-                                      class="dropdown-item"
-                                    >
-                                      16
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="17"
-                                      class="dropdown-item"
-                                    >
-                                      17
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="child col">
-                            <div class="form-group">
-                              <div
-                                class="dropdown scroll-bar js-children-ages no-auto-init"
-                              >
-                                <button
-                                  type="button"
-                                  class="dropdown-toggle btn"
-                                  id="dropdownMenuChildren_17"
-                                  data-toggle="dropdown"
-                                  data-display="static"
-                                  aria-expanded="false"
-                                  aria-haspopup="true"
-                                ></button>
-                                <input
-                                  disabled="disabled"
-                                  name="ages[1][7]"
-                                  value="0"
-                                  data-childrenid="7"
-                                  type="hidden"
-                                  id="ages[1][7]"
-                                />
-                                <div
-                                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                                  aria-labelledby="dropdownMenuChildren_17"
-                                >
-                                  <div class="scroll-inner simple-scrollbar">
-                                    <button
-                                      type="button"
-                                      data-option="0"
-                                      class="dropdown-item"
-                                    >
-                                      0
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="1"
-                                      class="dropdown-item"
-                                    >
-                                      1
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="2"
-                                      class="dropdown-item"
-                                    >
-                                      2
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="3"
-                                      class="dropdown-item"
-                                    >
-                                      3
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="4"
-                                      class="dropdown-item"
-                                    >
-                                      4
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="5"
-                                      class="dropdown-item"
-                                    >
-                                      5
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="6"
-                                      class="dropdown-item"
-                                    >
-                                      6
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="7"
-                                      class="dropdown-item"
-                                    >
-                                      7
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="8"
-                                      class="dropdown-item"
-                                    >
-                                      8
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="9"
-                                      class="dropdown-item"
-                                    >
-                                      9
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="10"
-                                      class="dropdown-item"
-                                    >
-                                      10
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="11"
-                                      class="dropdown-item"
-                                    >
-                                      11
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="12"
-                                      class="dropdown-item"
-                                    >
-                                      12
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="13"
-                                      class="dropdown-item"
-                                    >
-                                      13
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="14"
-                                      class="dropdown-item"
-                                    >
-                                      14
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="15"
-                                      class="dropdown-item"
-                                    >
-                                      15
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="16"
-                                      class="dropdown-item"
-                                    >
-                                      16
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="17"
-                                      class="dropdown-item"
-                                    >
-                                      17
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="child col">
-                            <div class="form-group">
-                              <div
-                                class="dropdown scroll-bar js-children-ages no-auto-init"
-                              >
-                                <button
-                                  type="button"
-                                  class="dropdown-toggle btn"
-                                  id="dropdownMenuChildren_18"
-                                  data-toggle="dropdown"
-                                  data-display="static"
-                                  aria-expanded="false"
-                                  aria-haspopup="true"
-                                ></button>
-                                <input
-                                  disabled="disabled"
-                                  name="ages[1][8]"
-                                  value="0"
-                                  data-childrenid="8"
-                                  type="hidden"
-                                  id="ages[1][8]"
-                                />
-                                <div
-                                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                                  aria-labelledby="dropdownMenuChildren_18"
-                                >
-                                  <div class="scroll-inner simple-scrollbar">
-                                    <button
-                                      type="button"
-                                      data-option="0"
-                                      class="dropdown-item"
-                                    >
-                                      0
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="1"
-                                      class="dropdown-item"
-                                    >
-                                      1
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="2"
-                                      class="dropdown-item"
-                                    >
-                                      2
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="3"
-                                      class="dropdown-item"
-                                    >
-                                      3
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="4"
-                                      class="dropdown-item"
-                                    >
-                                      4
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="5"
-                                      class="dropdown-item"
-                                    >
-                                      5
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="6"
-                                      class="dropdown-item"
-                                    >
-                                      6
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="7"
-                                      class="dropdown-item"
-                                    >
-                                      7
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="8"
-                                      class="dropdown-item"
-                                    >
-                                      8
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="9"
-                                      class="dropdown-item"
-                                    >
-                                      9
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="10"
-                                      class="dropdown-item"
-                                    >
-                                      10
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="11"
-                                      class="dropdown-item"
-                                    >
-                                      11
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="12"
-                                      class="dropdown-item"
-                                    >
-                                      12
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="13"
-                                      class="dropdown-item"
-                                    >
-                                      13
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="14"
-                                      class="dropdown-item"
-                                    >
-                                      14
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="15"
-                                      class="dropdown-item"
-                                    >
-                                      15
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="16"
-                                      class="dropdown-item"
-                                    >
-                                      16
-                                    </button>
-                                    <button
-                                      type="button"
-                                      data-option="17"
-                                      class="dropdown-item"
-                                    >
-                                      17
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- end check in form -->
-          </div>
-        </div>
-
-        <!-- REMOVE ME if unused -->
-        <div class="hotel hidden">
-          <div class="hotel__header">
-            <div class="container">
-              <div class="hotel__meta">
-                <!-- <div class="hotel-logo">&nbsp;</div> --->
-                <h1 class="hotel__name">W Hotel Austin</h1>
-
-                <!-- Class "hotel-adress" required for ClickTripz-->
-                <address class="hotel__address hotel-adress">
-                  200 Lavaca Street, Austin TX
-                </address>
-                <div class="breadcrumb-block for-desktop for-tablet">
-                  <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb js-lp-breadcrumbs">
-                      <li><a class="breadcrumb-item" href="#">Home</a></li>
-                      <li><a class="breadcrumb-item" href="#">Hotels</a></li>
-                      <li><a class="breadcrumb-item" href="h#">U.S.A.</a></li>
-                      <li>
-                        <a class="breadcrumb-item" href="#">Austin TX</a>
-                      </li>
-                      <li class="breadcrumb-item active">W Hotel Austin</li>
-                    </ol>
-                  </nav>
-                </div>
-              </div>
-              <!-- reserve now primary CTA -->
-              <div class="hotel__cta">
-                <a
-                  class="btn btn-warning js-link-stay js-mp-lp-reserve reserve-now-btn"
-                  title="Reserve"
-                  href="#"
-                  role="button"
-                  target="_blank"
-                  >reserve now</a
-                >
-              </div>
-            </div>
-            <!-- end reserve now primary CTA -->
-          </div>
-
-          <div class="slider-bg">
-            <!-- start hero -->
-            <div class="container">
-              <div class="row">
-                <div class="col slider-hotel"></div>
-                <div class="col map-nav for-desktop for-tablet">
-                  <div class="menu">
-                    <nav>
-                      <a href="#" title="Photos" class="js-link-photos"
-                        >Photos</a
-                      ><a href="#" title="Map" class="js-link-map">Map</a
-                      ><a
-                        rel="nofollow"
-                        href="#"
-                        title="Groups(9+ Rooms)"
-                        class="js-groups-link"
-                        data-destination-page="groupRates"
-                        >Groups (9+ Rooms)</a
-                      ><a
-                        rel="nofollow"
-                        href="#"
-                        title="Weddings"
-                        class="js-groups-link"
-                        data-destination-page="weddings"
-                        >Weddings</a
-                      >
-                    </nav>
-                  </div>
-                  <div class="map-block js-map-block">
-                    <section class="map mt-3">
-                      <div class="hotel-map-position js-top-map">
-                        <div class="hotel-map js-map-wrap position-relative">
-                          <div class="hotel-map-img">
-                            <div class="js-hotel-map">
-                              <div
-                                class="js-wrap-map wrap-map"
-                                data-map-width="360"
-                                data-map-height="230"
-                                data-map-zoom="14"
-                                data-map-dinamic-height="true"
-                              ></div>
-                            </div>
-                          </div>
-                          <div
-                            class="hotel-map-button js-map-button position-absolute d-none"
-                          >
-                            <a href="#"
-                              ><img src="/images/parts/map/location.svg" />
-                              <span>View Map</span></a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                  <div class="text-center pr-book-block">
-                    <p class="text-green best">
-                      <img
-                        src="images/icons/room-best-value.png"
-                        title="Best value"
-                        alt="Best value"
-                      />
-                    </p>
-                    <p>
-                      Enter your dates to view <br />
-                      today's low rates and promotions.
-                    </p>
-                    <p class="bottom">
-                      <a
-                        class="btn btn-warning js-link-stay js-mp-lp-checkrates-bt"
-                        title="Reserve"
-                        href="#"
-                        role="button"
-                        target="_blank"
-                        >CHECK RATES</a
-                      >
                     </p>
                   </div>
                 </div>
@@ -4188,7 +2441,7 @@
                 </div>
 
                 <div class="title-block d-flex js-hotel-rooms-list">
-                  <h4 class="w-100">Rooms & Rates</h4>
+                  <h2 class="section-heading">Rooms & Rates</h2>
                   <div class="mobile-currency for-mobile flex-shrink-1">
                     <div
                       class="border-left align-self-stretch changing-currency d-none"
@@ -6183,6 +4436,52 @@
             <div class="hotel-rooms-types">
               <div class="container">
                 <div class="position-relative">
+                  <div
+                    class="login-form-click no-code flex-shrink-1 for-desktop for-tablet"
+                  >
+                    <div
+                      class="bg d-flex justify-content-center align-items-center"
+                    >
+                      <a
+                        title="Log in"
+                        data-modalform="js-modal-login-form"
+                        class="d-flex justify-content-center align-items-center js-show-modal-loginform"
+                        href="#"
+                      >
+                        <span class="img"
+                          ><svg
+                            width="25"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_132_329)">
+                              <path
+                                d="M22.3823 2.11761H17.4411C16.2764 2.11761 14.6497 2.79142 13.8261 3.61501L5.52678 11.9143C4.70324 12.7379 4.70324 14.0855 5.52678 14.9091L11.7085 21.0908C12.532 21.9144 13.8797 21.9144 14.7032 21.0908L23.0025 12.7915C23.8262 11.9679 24.5 10.3411 24.5 9.17644V4.23526C24.5 3.07056 23.547 2.11761 22.3823 2.11761ZM19.5588 9.17644C18.3892 9.17644 17.4411 8.22835 17.4411 7.05879C17.4411 5.88923 18.3892 4.94114 19.5588 4.94114C20.7284 4.94114 21.6764 5.88923 21.6764 7.05879C21.6764 8.22835 20.7284 9.17644 19.5588 9.17644ZM2.41084 13.9108L9.96329 21.4633C9.16335 21.8859 8.14428 21.7619 7.47316 21.0908L1.29149 14.9091C0.467942 14.0855 0.467942 12.7379 1.29149 11.9143L9.59081 3.61501C10.4144 2.79142 12.0411 2.11761 13.2059 2.11761L2.41084 12.9126C2.13634 13.1871 2.13634 13.6363 2.41084 13.9108Z"
+                                fill="white"
+                                fill-opacity="0.9"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_132_329">
+                                <rect
+                                  width="24"
+                                  height="22.5882"
+                                  fill="white"
+                                  transform="translate(0.5 0.705872)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                        <span
+                          >Log in to <strong> save up to $25</strong><br />
+                          on today's booking</span
+                        >
+                      </a>
+                    </div>
+                  </div>
                   <div class="hotel-rooms group-items mobile-layout">
                     <div class="d-flex flex-column about-room js-about-room">
                       <div class="d-flex room-info">
@@ -6265,8 +4564,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -6294,8 +4598,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -6485,8 +4794,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -6514,8 +4828,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -6704,8 +5023,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -6733,7 +5057,7 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="/images/icons/eat.png" /> Free
+                                      <img src="images/icons/eat.png" /> Free
                                       Breakfast
                                     </li>
                                   </ul>
@@ -6923,8 +5247,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -6952,8 +5281,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -7140,8 +5474,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -7169,8 +5508,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -7231,11 +5575,22 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                     <li>
-                                      <img src="images/icons/parking.png" />
+                                      <img
+                                        src="images/icons/parking.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                        loading="lazy"
+                                      />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -7407,8 +5762,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -7436,8 +5796,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -7624,8 +5989,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -7653,11 +6023,17 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                     <li>
-                                      <img src="images/icons/parking.png" />
+                                      <img src="images/icons/parking.png" alt=""
+                                      height="14" width=" loading="lazy"" />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -7686,8 +6062,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -7748,11 +6129,17 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                     <li>
-                                      <img src="images/icons/parking.png" />
+                                      <img src="images/icons/parking.png" alt=""
+                                      height="14" width=" loading="lazy"" />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -7943,8 +6330,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -7972,11 +6364,17 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                     <li>
-                                      <img src="images/icons/parking.png" />
+                                      <img src="images/icons/parking.png" alt=""
+                                      height="14" width=" loading="lazy"" />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -8005,8 +6403,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -8067,13 +6470,17 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                     <li>
-                                      <img
-                                        src="images/icons/free-parking.png"
-                                      />
+                                      <img src="images/icons/parking.png" alt=""
+                                      height="14" width=" loading="lazy"" />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -8247,11 +6654,17 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                     <li>
-                                      <img src="images/icons/parking.png" />
+                                      <img src="images/icons/parking.png" alt=""
+                                      height="14" width=" loading="lazy"" />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -8280,11 +6693,17 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                     <li>
-                                      <img src="images/icons/parking.png" />
+                                      <img src="images/icons/parking.png" alt=""
+                                      height="14" width=" loading="lazy"" />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -8477,8 +6896,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -8506,8 +6930,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -8705,8 +7134,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                 </div>
@@ -8734,8 +7168,13 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                   </ul>
                                   <div
@@ -8774,7 +7213,7 @@
                                     class="free-cancellation img free-cancellation-title-mobile"
                                   >
                                     <img
-                                      src="/images/icons/check-circle.png"
+                                      src="images/icons/check-circle.png"
                                       title="Free Cancellation"
                                       alt="Free Cancellation"
                                     />
@@ -8924,11 +7363,12 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/icons/eat.png" />
+                                      <img src="images/icons/eat.png" />
                                       Free Breakfast
                                     </li>
                                     <li>
-                                      <img src="images/icons/parking.png" />
+                                      <img src="images/icons/parking.png" alt=""
+                                      height="14" width=" loading="lazy"" />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -8957,11 +7397,17 @@
                                   <p class="title-amenities">With your stay:</p>
                                   <ul class="amenities d-flex">
                                     <li>
-                                      <img src="images/icons/eat.png" /> Free
-                                      Breakfast
+                                      <img
+                                        src="images/icons/eat.png"
+                                        alt=""
+                                        height="14"
+                                        width="14"
+                                      />
+                                      Free Breakfast
                                     </li>
                                     <li>
-                                      <img src="images/icons/parking.png" />
+                                      <img src="images/icons/parking.png" alt=""
+                                      height="14" width=" loading="lazy"" />
                                       Free Parking
                                     </li>
                                   </ul>
@@ -9085,53 +7531,6 @@
                       </div>
                     </div>
                   </div>
-
-                  <div
-                    class="login-form-click no-code flex-shrink-1 for-desktop for-tablet"
-                  >
-                    <div
-                      class="bg d-flex justify-content-center align-items-center"
-                    >
-                      <a
-                        title="Log in"
-                        data-modalform="js-modal-login-form"
-                        class="d-flex justify-content-center align-items-center js-show-modal-loginform"
-                        href="#"
-                      >
-                        <span class="img"
-                          ><svg
-                            width="25"
-                            height="24"
-                            viewBox="0 0 25 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g clip-path="url(#clip0_132_329)">
-                              <path
-                                d="M22.3823 2.11761H17.4411C16.2764 2.11761 14.6497 2.79142 13.8261 3.61501L5.52678 11.9143C4.70324 12.7379 4.70324 14.0855 5.52678 14.9091L11.7085 21.0908C12.532 21.9144 13.8797 21.9144 14.7032 21.0908L23.0025 12.7915C23.8262 11.9679 24.5 10.3411 24.5 9.17644V4.23526C24.5 3.07056 23.547 2.11761 22.3823 2.11761ZM19.5588 9.17644C18.3892 9.17644 17.4411 8.22835 17.4411 7.05879C17.4411 5.88923 18.3892 4.94114 19.5588 4.94114C20.7284 4.94114 21.6764 5.88923 21.6764 7.05879C21.6764 8.22835 20.7284 9.17644 19.5588 9.17644ZM2.41084 13.9108L9.96329 21.4633C9.16335 21.8859 8.14428 21.7619 7.47316 21.0908L1.29149 14.9091C0.467942 14.0855 0.467942 12.7379 1.29149 11.9143L9.59081 3.61501C10.4144 2.79142 12.0411 2.11761 13.2059 2.11761L2.41084 12.9126C2.13634 13.1871 2.13634 13.6363 2.41084 13.9108Z"
-                                fill="white"
-                                fill-opacity="0.9"
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_132_329">
-                                <rect
-                                  width="24"
-                                  height="22.5882"
-                                  fill="white"
-                                  transform="translate(0.5 0.705872)"
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-                        <span
-                          >Log in to <strong> save up to $25</strong><br />
-                          on today's booking</span
-                        >
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -9211,7 +7610,7 @@
               <div class="map-placeholder"></div>
               <button class="hotel-map__button">
                 <img
-                  src="/images/icons/location.svg"
+                  src="images/icons/location.svg"
                   height="20"
                   width="20"
                   loading="lazy"
@@ -9231,7 +7630,7 @@
                 <li class="nearby-hotels__list-item">
                   <figure class="nearby-hotel">
                     <img
-                      src="/images/ramada.jpg"
+                      src="images/ramada.jpg"
                       alt=""
                       class="nearby-hotel__photo"
                       loading="lazy"
@@ -9246,7 +7645,7 @@
                         <p class="nearby-hotel__rating-text sr-only">3 stars</p>
                         <div class="nearby-hotel__visual-rating">
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9254,7 +7653,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9262,7 +7661,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9277,7 +7676,7 @@
                 <li class="nearby-hotels__list-item">
                   <figure class="nearby-hotel">
                     <img
-                      src="/images/hilton-garden-inn-reno.jpg"
+                      src="images/hilton-garden-inn-reno.jpg"
                       alt=""
                       class="nearby-hotel__photo"
                       loading="lazy"
@@ -9290,7 +7689,7 @@
                         <p class="nearby-hotel__rating-text sr-only">3 stars</p>
                         <div class="nearby-hotel__visual-rating">
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9298,7 +7697,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9306,7 +7705,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9321,7 +7720,7 @@
                 <li class="nearby-hotels__list-item">
                   <figure class="nearby-hotel">
                     <img
-                      src="/images/best-western-plus-boomtown-casino.jpg"
+                      src="images/best-western-plus-boomtown-casino.jpg"
                       alt=""
                       class="nearby-hotel__photo"
                       loading="lazy"
@@ -9336,7 +7735,7 @@
                         <p class="nearby-hotel__rating-text sr-only">3 stars</p>
                         <div class="nearby-hotel__visual-rating">
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9344,7 +7743,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9352,7 +7751,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9367,7 +7766,7 @@
                 <li class="nearby-hotels__list-item">
                   <figure class="nearby-hotel">
                     <img
-                      src="/images/surestay-plus-hotel.jpg"
+                      src="images/surestay-plus-hotel.jpg"
                       alt=""
                       class="nearby-hotel__photo"
                       loading="lazy"
@@ -9382,7 +7781,7 @@
                         <p class="nearby-hotel__rating-text sr-only">3 stars</p>
                         <div class="nearby-hotel__visual-rating">
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9390,7 +7789,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9398,7 +7797,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9413,7 +7812,7 @@
                 <li class="nearby-hotels__list-item">
                   <figure class="nearby-hotel">
                     <img
-                      src="/images/baymont-inn-and-suites.jpg"
+                      src="images/baymont-inn-and-suites.jpg"
                       alt=""
                       class="nearby-hotel__photo"
                       loading="lazy"
@@ -9428,7 +7827,7 @@
                         <p class="nearby-hotel__rating-text sr-only">3 stars</p>
                         <div class="nearby-hotel__visual-rating">
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9436,7 +7835,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9444,7 +7843,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9459,7 +7858,7 @@
                 <li class="nearby-hotels__list-item">
                   <figure class="nearby-hotel">
                     <img
-                      src="/images/aiden-by-best-western.jpg"
+                      src="images/aiden-by-best-western.jpg"
                       alt=""
                       class="nearby-hotel__photo"
                       loading="lazy"
@@ -9474,7 +7873,7 @@
                         <p class="nearby-hotel__rating-text sr-only">3 stars</p>
                         <div class="nearby-hotel__visual-rating">
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9482,7 +7881,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9490,7 +7889,7 @@
                             width="16"
                           />
                           <img
-                            src="/images/icons/star.svg"
+                            src="images/icons/star.svg"
                             alt=""
                             class="nearby-hotel__rating-star"
                             loading="lazy"
@@ -9549,146 +7948,6 @@
             for more information.
           </p>
         </section>
-        <!-- Hidden field for ClickTripz -->
-        <input
-          type="hidden"
-          name="hotelId"
-          value="21335681-4d10-5872-b544-742cddf26c5f"
-        />
-
-        <div
-          class="modal fade modal-map-box js-modal-map-box"
-          tabindex="-1"
-          role="dialog"
-        >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body"><div id="js-mapbox-map"></div></div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="modal fade modal-learn-more reasons js-modal-learn-more"
-          tabindex="-1"
-          role="dialog"
-        >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h2>
-                  4 REASONS TO BOOK WITH <br />
-                  <b class="trademark-name">Room77<sup>TM</sup></b>
-                </h2>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  As an independent travel network offering over 100,000 hotels
-                  worldwide, we can get you the same deals you expect with a
-                  bigger travel agency or direct from the hotel. We compile the
-                  best rates from several top suppliers to make it easy to book
-                  the perfect room. Combine these deals with our all-devices
-                  booking engine, strict privacy focus, and world-class support
-                  and you have the
-                  <b class="trademark-name">Room77<sup>TM</sup></b> difference.
-                  Learn more
-                  <a title="about us" href="#" target="_blank"> about us</a>.
-                </p>
-
-                <section class="reasons-block">
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="media">
-                        <img
-                          src="/assets/4a44a40b/images/reasons/exclusive-deals.svg"
-                          class="mr-4"
-                          alt="Exclusive Deals"
-                        />
-                        <div class="media-body">
-                          <h5 class="mt-0">Exclusive Deals</h5>
-                          Deep Discounts And Popular Exclusives.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="media">
-                        <img
-                          src="/assets/4a44a40b/images/reasons/massive-selection.svg"
-                          class="mr-4"
-                          alt="Massive selection"
-                        />
-                        <div class="media-body">
-                          <h5 class="mt-0">Massive selection</h5>
-                          100,000+ Hotels From All The Top Suppliers!
-                        </div>
-                      </div>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-6">
-                      <div class="media">
-                        <img
-                          src="/assets/4a44a40b/images/reasons/customer-service.svg"
-                          class="mr-4"
-                          alt="Leading Customer Service"
-                        />
-                        <div class="media-body">
-                          <h5 class="mt-0">Leading Customer Service</h5>
-                          Our Agents Are Friendly And Available 24/7.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="media">
-                        <img
-                          src="/assets/4a44a40b/images/reasons/strict-privac.svg"
-                          class="mr-4"
-                          alt="Strict Privacy Focus"
-                        />
-                        <div class="media-body">
-                          <h5 class="mt-0">Strict Privacy Focus</h5>
-                          All Bookings Are Secured And Protected.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="modal fade modal-login-form js-modal-login-form"
-          tabindex="-1"
-          role="dialog"
-        >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content login-form-content">
-              <div class="modal-body">
-                <div class="js-modal-form-wrap"></div>
-                <div class="loader-fon">
-                  <div class="loader">Loading...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </main>
     </div>
 
@@ -9700,8 +7959,6 @@
               <div class="col logo-social d-flex flex-column">
                 <div class="d-flex flex-column mb-auto">
                   <h3>W Hotel Austin</h3>
-                  <!-- <img title="Guestreservations - Logo" alt="Guestreservations - Logo" src="/assets/237ed65f/images/logo-dark-tm.svg"> 
-                        <small> An independent travel network</small> -->
                 </div>
                 <div class="social-networks">
                   <a title="Facebook" href="#" target="_blank">
@@ -9776,72 +8033,6 @@
             </div>
           </div>
 
-          <div
-            class="modal fade modal-admin"
-            id="show-no-affiliation"
-            tabindex="-1"
-            aria-labelledby="myModalLabel"
-          >
-            <div class="modal-dialog modal-log" role="document">
-              <div class="modal-content">
-                <div class="modal-header text-center">
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <h4 class="modal-title trademark-name" id="myModalLabel">
-                    Room77<sup>TM</sup><br />
-                    Hotel Non-Affiliation – Proudly Independent Network
-                  </h4>
-                </div>
-                <div class="modal-body" id="modal-body">
-                  <div class="panel panel-default">
-                    We are an independent travel network for over 100,000 hotels
-                    worldwide. We are not owned or sponsored by any particular
-                    hotel, and the trademarks of all hotels in our network are
-                    owned by the respective hotels or licensors. We only use
-                    hotel trademarks or information to the extent necessary to
-                    assist our customers to book rooms in the travel destination
-                    of their choice.
-                  </div>
-
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <b class="trademark-name">Room77<sup>TM</sup></b>
-                      Connects Travelers to Relevant Deals:
-                    </div>
-                    <div class="panel-body no-padding">
-                      <span class="row">
-                        <p class="icons icon-case">
-                          We are focused on connecting travelers to the most
-                          relevant deals.
-                        </p>
-                      </span>
-                      <span class="row">
-                        <p class="icons icon-bed">
-                          As an independent travel network and online travel
-                          agent (OTA), we can offer rooms through hotel room
-                          suppliers and through global distribution systems
-                          where hotels place their inventory for sale.
-                        </p>
-                      </span>
-                      <span class="row">
-                        <p class="icons icon-sale">
-                          This allows us, as an independent travel network, to
-                          get you the same deals you expect with larger travel
-                          agencies.
-                        </p>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="copyrighted-slogan w-100">
             <div class="row">
               <div class="col-md-auto copyrighted">

@@ -10300,8 +10300,8 @@ body h4.trademark-name.transform sup {
 }
 
 .hotel-info-block .map-nav .wrap-map {
+  overflow: hidden;
   height: 246px;
-  /* background:no-repeat url("../images/map-246.png"); */
 }
 
 .hotel-info-block .hotel-title h1.hotel-name {
@@ -10599,17 +10599,17 @@ body h4.trademark-name.transform sup {
   line-height: 14px;
 }
 .login-form-click {
-  top: -36px;
+  top: -34px;
   align-content: center;
   color: #fff;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   right: 0;
 }
 .login-form-click .bg {
   background: #13948f;
   border-radius: 8px 8px 0 0;
-  height: 36px;
+  height: 40px;
   font-size: 16px;
   line-height: 1.2em;
   padding: 8px;
@@ -10802,6 +10802,7 @@ body h4.trademark-name.transform sup {
   padding: 0.7rem 1.75rem;
   background: #fff;
 }
+
 @media (max-width: 1199.98px) {
   .hotel-info-block .slider-hotel {
     -ms-flex: 0 0 55%;
@@ -10816,7 +10817,6 @@ body h4.trademark-name.transform sup {
     max-width: 45%;
   }
   .hotel-info-block .map-nav .wrap-map {
-    overflow: hidden;
     height: 150px;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -11204,7 +11204,7 @@ body h4.trademark-name.transform sup {
 }
 
 .hotel-amenities__list li {
-  background: no-repeat url('/images/icons/check-circle.png') left 17px;
+  background: no-repeat url('../images/icons/check-circle.png') left 17px;
   list-style-type: none;
   padding: 20px 40px 0 35px;
   font-size: 16px;
@@ -11221,7 +11221,7 @@ body h4.trademark-name.transform sup {
   grid-template-columns: 1fr 1fr;
 }
 .hotel-location .section-heading {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .hotel-location__address {
   color: var(--gray);
@@ -11367,29 +11367,33 @@ body h4.trademark-name.transform sup {
   }
 }
 .hotel-rooms {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   margin-top: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
-.hotel-rooms .about-room {
-  padding: 1.3rem 1.8rem 0;
-  border: 1px solid #e9e9ea;
-  border-bottom: none;
+
+.about-room {
   background: #f9f9fa;
+  box-shadow: 0px 16px 24px rgb(83 91 100 / 24%);
+  border: 1px solid #e9e9ea;
+  border-radius: var(--border-radius);
+  padding: 1.3rem 1.8rem 0;
 }
-.hotel-rooms .about-room:last-child {
+.about-room:last-child {
   border-bottom: 2px solid #e9e9ea;
 }
-.hotel-rooms .about-room:first-child {
+.about-room:first-child {
   background: #f4f9fb;
   border: 2px solid #043f70 !important;
 }
-.hotel-rooms .about-room:nth-child(2) {
-  border-top: none;
-}
-.booking-landing-page .hotel-rooms .about-room:first-child {
+.booking-landing-page .about-room:first-child {
   background: #f9f9fa;
   border: 1px solid #e9e9ea !important;
 }
-.hotel-rooms .about-room .room-info {
+.about-room .room-info {
   padding-bottom: 1.3rem;
   -ms-flex-direction: row !important;
   flex-direction: row !important;
@@ -11530,7 +11534,7 @@ body h4.trademark-name.transform sup {
   font-weight: 700;
 }
 .hotel-rooms .body .room p.detail a::after {
-  background-image: url(../images/parts/details/down-arrow.svg);
+  background-image: url('../images/icons/down-arrow.svg');
   content: ' ';
   width: 10px;
   height: 10px;
@@ -11619,7 +11623,7 @@ body h4.trademark-name.transform sup {
   font-size: 1.3em;
 }
 .hotel-rooms.group-items .about-room:first-child {
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 .hotel-rooms.group-items .room-info .body {
   flex-direction: column;
@@ -11788,7 +11792,7 @@ body h4.trademark-name.transform sup {
   font-weight: 700;
 }
 .hotel-rooms.group-items .body p.detail a::after {
-  background-image: url(../images/parts/details/down-arrow.svg);
+  background-image: url('../images/icons/down-arrow.svg');
   content: ' ';
   width: 10px;
   height: 10px;
@@ -11820,7 +11824,7 @@ body h4.trademark-name.transform sup {
   line-height: 24px;
 }
 .hotel-rooms.group-items .show-more span p::after {
-  background-image: url(../images/parts/details/down-arrow-orange.svg);
+  background-image: url(../images/icons/down-arrow-orange.svg);
   content: ' ';
   width: 12px;
   height: 12px;
@@ -11849,7 +11853,7 @@ body h4.trademark-name.transform sup {
   line-height: 24px;
 }
 .hotel-rooms.group-items .show-less span p::after {
-  background-image: url(../images/parts/details/up-arrow.svg);
+  background-image: url(../images/icons/up-arrow.svg);
   content: ' ';
   width: 12px;
   height: 12px;
@@ -11875,10 +11879,10 @@ body h4.trademark-name.transform sup {
   justify-content: flex-end;
 }
 @media (max-width: 1199.98px) {
-  .hotel-rooms .about-room {
+  .about-room {
     padding: 1rem 1.1rem 0;
   }
-  .hotel-rooms .about-room .room-info {
+  .about-room .room-info {
     padding-bottom: 1rem;
   }
   .hotel-rooms .img-room {
@@ -12014,7 +12018,7 @@ body h4.trademark-name.transform sup {
   .hotel-rooms.mt-4 {
     margin-top: 1rem !important;
   }
-  .hotel-rooms .about-room .room-info {
+  .about-room .room-info {
     -ms-flex-wrap: wrap !important;
     flex-wrap: wrap !important;
   }
@@ -12098,7 +12102,7 @@ body h4.trademark-name.transform sup {
     font-weight: 400;
     text-decoration: underline;
   }
-  .hotel-rooms .about-room {
+  .about-room {
     padding: 1rem 1.2rem 0;
   }
   .room-details {
@@ -13341,15 +13345,15 @@ input.check_date_view {
   width: 100%;
   padding: 0;
   text-align: left;
-  background: transparent url('../boost_assets/d3b99fd1/images/arrow-down.svg')
-    no-repeat scroll center right/18px 18px;
+  background: transparent url('../images/icons/arrow-down.svg') no-repeat scroll
+    center right/18px 18px;
 }
 .form-search-hotels .children-ages .form-group .dropdown .btn {
   width: 100%;
   padding: 0;
   text-align: left;
-  background: transparent url('../boost_assets/d3b99fd1/images/arrow-down.svg')
-    no-repeat scroll center right/15px 15px;
+  background: transparent url('../images/icons/arrow-down.svg') no-repeat scroll
+    center right/15px 15px;
 }
 .destination .twitter-typeahead {
 }
@@ -13452,8 +13456,8 @@ input.check_date_view {
 }
 .form-search-hotels .date-info .form-group .form-control {
   background-position-x: 100%;
-  background: transparent url('../boost_assets/d3b99fd1/images/calendar.svg')
-    no-repeat scroll center right/17px 17px;
+  background: transparent url('../images/icons/calendar.svg') no-repeat scroll
+    center right/17px 17px;
 }
 .date-info .form-group .form-control:hover,
 .date-info label:hover,
@@ -16354,7 +16358,7 @@ input.check_date_view {
 }
 .readmore-text-wrap .readmore-button-wrap a::after {
   content: ' ';
-  background-image: url(../boost_assets/940bb33d/images/down-arrow.svg);
+  background-image: url('../images/icons/down-arrow.svg');
   width: 8px;
   height: 8px;
   display: inline-block;
@@ -16370,7 +16374,7 @@ input.check_date_view {
 }
 .readmore-shown.readmore-text-wrap:not(.readmore-opened)
   .readmore-text-content::before {
-  display: block; /*color-stop(100%,#fff));*/
+  display: block;
   content: '';
   z-index: 2;
   position: absolute;
@@ -16536,12 +16540,19 @@ input.check_date_view {
   .header-social.header.navbar .social-networks {
     padding-right: 15px;
   }
-  .header-social.header.navbar .social-networks img {
-    border: 1px solid #909093;
+  .header-social.header.navbar .social-network {
+    background-color: #efefef;
+    border: 1px solid #efefef !important;
     border-radius: 50%;
-    padding: 0 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
+  }
+  .header-social.header.navbar .social-networks img {
+		width: 16px;
+		height: auto;
   }
   .header-social.header.navbar .social-networks a {
     margin-right: 3px;
@@ -16668,7 +16679,7 @@ input.check_date_view {
 .changing-currency .dropdown-toggle {
   width: 100%;
   text-align: left;
-  background: url(../boost_assets/fbf88e7c/images/arrow-down.svg);
+  background: url('../images/icons/arrow-down.svg');
   background-position-x: 0;
   background-position-y: 0;
   background-repeat: no-repeat;
@@ -16692,7 +16703,7 @@ input.check_date_view {
 .mobile-currency .changing-currency .dropdown-toggle {
   width: 100%;
   text-align: left;
-  background: url(../boost_assets/fbf88e7c/images/arrow-down-gray.svg);
+  background: url(../images/icons/arrow-down-gray.svg);
   background-position-x: 0;
   background-position-y: 0;
   background-repeat: no-repeat;
