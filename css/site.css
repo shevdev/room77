@@ -38,6 +38,7 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
   --border-radius: 8px;
+	--full-border-radius: 9999px;
   --button-radius: 5px;
   --primary-color: #2a809a;
   --primary-color-light: #69c0d5;
@@ -16417,7 +16418,7 @@ input.check_date_view {
 .header.navbar {
   font-size: 1.4em;
   line-height: 1em;
-  padding: 0;
+  padding: 0.75rem;
 }
 .header.navbar a {
   color: #fff;
