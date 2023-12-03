@@ -45,6 +45,11 @@
     <link rel="preload" as="image" href="images/w-hotel-pool.png" />
     <link rel="preload" as="image" href="images/map-246.png" />
 
+    <script
+      src="https://cdn.jsdelivr.net/gh/aboxofsox/feather-icon-web-component@master/dist/feather-icon-wc.js"
+      defer
+    ></script>
+
     <meta name="csrf-param" content="_csrf" />
     <meta name="csrf-token" content="" />
   </head>
@@ -471,6 +476,20 @@
             <div class="container">
               <div class="bg-title-hotel d-flex position-relative">
                 <div class="block-info">
+                  <div class="breadcrumb-block for-desktop for-tablet">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb js-lp-breadcrumbs">
+                        <li><a class="breadcrumb-item" href="#">Home</a></li>
+                        <li><a class="breadcrumb-item" href="#">Hotels</a></li>
+                        <li><a class="breadcrumb-item" href="#">U.S.A.</a></li>
+                        <li>
+                          <a class="breadcrumb-item" href="#">Austin TX</a>
+                        </li>
+                        <li class="breadcrumb-item active">W Hotel Austin</li>
+                      </ol>
+                    </nav>
+                  </div>
+
                   <div class="hotel-branding">
                     <img
                       style="mix-blend-mode: difference"
@@ -483,20 +502,54 @@
                     <h1 class="hotel-name">W Hotel Austin</h1>
                   </div>
 
-                  <p class="hotel-adress">200 Lavaca Street, Austin TX</p>
-                  <div class="breadcrumb-block for-desktop for-tablet">
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb js-lp-breadcrumbs">
-                        <li><a class="breadcrumb-item" href="#">Home</a></li>
-                        <li><a class="breadcrumb-item" href="#">Hotels</a></li>
-                        <li><a class="breadcrumb-item" href="h#">U.S.A.</a></li>
-                        <li>
-                          <a class="breadcrumb-item" href="#">Austin TX</a>
-                        </li>
-                        <li class="breadcrumb-item active">W Hotel Austin</li>
-                      </ol>
-                    </nav>
+                  <div class="hotel-rating">
+                    <p class="hotel-rating__text sr-only">3 stars</p>
+                    <div class="hotel-visual-rating">
+                      <img
+                        src="images/icons/star.svg"
+                        alt=""
+                        class="hotel-rating__star"
+                        loading="lazy"
+                        height="16"
+                        width="16"
+                      />
+                      <img
+                        src="images/icons/star.svg"
+                        alt=""
+                        class="hotel-rating__star"
+                        loading="lazy"
+                        height="16"
+                        width="16"
+                      />
+                      <img
+                        src="images/icons/star.svg"
+                        alt=""
+                        class="hotel-rating__star"
+                        loading="lazy"
+                        height="16"
+                        width="16"
+                      />
+                    </div>
                   </div>
+
+                  <address class="hotel-address">
+                    <feather-icon
+                      class="feather-icon"
+                      icon="map-pin"
+                      color="#2a809a"
+                      width="20"
+                      height="20"
+                    ></feather-icon>
+                    <p>200 Lavaca Street, Austin, TX, US 78701</p>
+                    <feather-icon
+                      class="feather-icon"
+                      icon="phone"
+                      color="#2a809a"
+                      width="20"
+                      height="20"
+                    ></feather-icon>
+                    <p>+1 (512) 542-3600</p>
+                  </address>
                 </div>
                 <div class="hotel__reserve-cta bottom-form">
                   <button
@@ -7570,7 +7623,8 @@
             <h2 class="section-heading">Location</h2>
             <address class="hotel-location__address">
               W Hotel <br />
-              200 Lavaca Street Austin, TX 78701
+              200 Lavaca Street Austin, TX, US 78701<br />
+              +1 (512) 542-3600
             </address>
 
             <div class="hotel-map">

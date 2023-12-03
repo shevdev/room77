@@ -220,6 +220,10 @@ a.button:focus {
   text-decoration: none;
 }
 
+.hotel-rating {
+  margin-bottom: 1rem;
+}
+
 .hotel-about {
   margin-bottom: 4.5rem;
   padding-top: 3.5rem;
