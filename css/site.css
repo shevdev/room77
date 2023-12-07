@@ -10282,34 +10282,12 @@ body h4.trademark-name.transform sup {
     width: 1080px !important;
   }
 }
-.hotel-info-block {
-  padding: 3rem 0 2rem;
-}
-.hotel-info-block .hotel-title {
-  margin: 0 0 1.3rem;
-  width: 100%;
-}
-.hotel-info-block .hotel-title .block-info {
-  padding: 0 200px 0 0;
-  width: 100%;
-}
 
 .hotel-info-block .map-nav .wrap-map {
   overflow: hidden;
   height: 246px;
 }
 
-.hotel-info-block .hotel-title h1.hotel-name {
-  font-size: 3.75em;
-  line-height: 1;
-  font-weight: 800;
-  margin-bottom: 0;
-}
-.booking-checkrates-page .hotel-title h1.hotel-name,
-.booking-nodeals-page .hotel-title h1.hotel-name {
-  cursor: pointer;
-  display: inline;
-}
 .hotel-info-block .hotel-title p.stars {
   margin: 0.3rem 0 0;
 }
@@ -10335,11 +10313,6 @@ body h4.trademark-name.transform sup {
 }
 .hotel-address p {
   margin: 0;
-}
-.hotel-info-block .bottom-form {
-  position: absolute;
-  right: 0;
-  top: 0.3rem;
 }
 
 .hotels-images-wrap .preload-carousel {
@@ -10884,12 +10857,6 @@ body h4.trademark-name.transform sup {
     width: 28px;
     height: 28px;
   }
-  .hotel-info-block .hotel-title h1.hotel-name {
-    font-size: 3.8em;
-  }
-  .hotel-info-block .hotel-title .block-info {
-    padding: 0 150px 0 0;
-  }
 
   .hotel-rooms .body .room ul.amenities {
     -ms-flex-wrap: wrap !important;
@@ -10929,25 +10896,15 @@ body h4.trademark-name.transform sup {
     -ms-flex-wrap: wrap !important;
     flex-wrap: wrap !important;
   }
-  .hotel-info-block .hotel-title .block-info {
-    width: 100%;
-    padding: 0;
-  }
-  .hotel-info-block .bg-title-hotel {
-    -ms-flex-wrap: wrap !important;
-    flex-wrap: wrap !important;
-  }
   .hotels-images-wrap .preload-carousel {
     padding-bottom: 0;
   }
   .hotel-info-block .bottom-form {
     display: flex;
     justify-content: center;
-    position: static;
-    padding-top: 1rem;
     width: 100%;
   }
-  .hotel-info-block .hotel-title h1.hotel-name {
+  .hotel-info-block .hotel-name {
     font-size: 3em;
   }
   .hotel-info-block .btn.btn-warning-br,
